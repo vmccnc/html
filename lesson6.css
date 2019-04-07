@@ -1,0 +1,129 @@
+ 
+body {
+    background-color: #79e6ee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.forma6{
+	width: 70%;
+	height: 1000px;
+	margin:20px auto 30px auto;
+	overflow: hidden;
+	border: solid 3px #ff7347;
+	background-color: yellow;
+}
+
+
+.center{
+	width: 500px;
+	margin: auto;
+	background-color: #79e6ee;
+	border: 1px solid red ;
+}
+
+.forma2{
+	/* width: 200px; */
+	margin-bottom: 20px;
+	
+
+ }
+
+.a1 input{
+	padding-left: 15px; 
+	padding-right: 15px; 	 
+}
+
+.a2 input{
+	padding-left: 15px; 
+	padding-right: 15px; 	 
+}
+
+.a1{
+	float: left;
+	margin-right: 10px;
+}
+ 
+.a2{
+	 
+	margin-left: 10px;
+}
+ 
+
+.a3{
+	float: left;
+	margin-right: 10px;
+}
+
+.a3 input{
+	padding-left: 15px; 
+	padding-right: 15px; 	 
+}
+
+.a4 button{
+	/* box-sizing: 70px; */
+	padding-left: 15px; 
+	padding-right: 15px; 
+	margin-left: 30px;
+}
+
+.rectangle{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	top: 0px;
+	transition: .5s linear .5s;
+ 
+}
+
+.rectangle2{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	top: 0px;
+	transition: .5s linear .5s;
+	animation: step 1s linear .2s infinite alternate-reverse;
+}
+
+.rectangle3{
+	width: 100px;
+	height: 100px;
+
+	position: relative;
+	top: 0px;
+	transition: .5s linear .5s;
+	animation: step_cat 1s linear .2s infinite alternate-reverse;
+}
+	
+.class_cat_png{
+	width: 100px;
+	height: 100px;
+
+	position: relative;
+	top: 0px;
+	transition: .5s linear .5s;
+	animation: step_cat 1s linear .2s infinite alternate-reverse;
+}
+
+.rectangle:hover{
+	background: green;
+	top: 50px;
+}
+
+@keyframes step{
+	0% {left: 0px; top: 0px	}
+	50%{top: 100px;}
+	100%{left: 100px; top: 100px;}
+}
+
+@keyframes step_cat{
+	0% {left: 0px; top: 0px	}
+	20%{top: 100px;}
+	40%{top: 0px;}
+	60%{top: 100px;}
+	80%{top: 0px;}
+	100%{left: 800px; top: 100px;}
+}

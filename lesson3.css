@@ -1,0 +1,131 @@
+body{
+	height: 2000;
+}
+
+p{color: red}
+
+
+.st p{
+	color: blue
+}
+
+
+strong{color: green}
+
+ul li:nth-child(even){
+	color: pink;
+	font-size:20px;
+}
+ul li:nth-child(odd){
+	color: blue
+}
+
+
+
+ol li:nth-child(2){
+	color: yellow
+}
+
+ 
+
+ol li:nth-child(3n+4){
+	color: green
+}
+
+
+#block{
+width: 100px;
+height: 100px;
+background-color: red;
+position: fixed;
+top: 0px;
+width: 100%;
+/* right:50px; */
+}
+
+#block:hover{
+	background-color: blue
+	}
+
+
+
+	#parent{
+		position: relative; 
+		width: 200px; 
+		height: 200px; 
+		background-color: #fafafa; 
+		border: solid 3px #9e70ba; 
+		font-size: 24px; 
+		text-align: center; 
+		}
+
+    #parent:hover{
+		background-color: red;
+		}
+
+	#child{
+		position: absolute; 
+		right: 40px; 
+		top: 100px; 
+		width: 50px; 
+		height: 50px; 
+		background-color: #9e70ba; 
+		border: solid 1px #78e382; 
+		font-size: 24px; 
+		text-align: center; 
+		}
+    #child:hover{
+		background-color: yellow;
+		}
+	
+
+
+#block2{
+ 	background-color: red;
+	}
+
+#block2::before{
+	content: "befor--"
+   }
+   #block2::after{
+	content: "---after"
+   }
+
+#block2:hover{
+	background-color: blue;
+	}	
+
+#float{
+	width: 100px; 
+	height: 100px;
+	background: #9e70ba;
+	color: red;
+	float: right;
+}	
+
+.text{
+	clear: both;
+}
+
+#float-parent{
+background-color: black; 
+overflow: hidden;
+}
+#float-parent:hover{
+	background-color: greenyellow; 
+	}
+	
+
+#float-child{
+	width: 200px; 
+	height: 200px;
+	background-color: red; 
+	float: left;
+}
+
+#float-child2{
+	width: 100px; 
+	height: 200px;
+	background-color: yellowgreen; 
+	float: left;
+}

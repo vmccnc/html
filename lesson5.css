@@ -1,0 +1,123 @@
+ 
+body {
+    /* height: 2000; */
+    background-image: url(https://img.tyt.by/720x720s/n/reuters/01/d/rts2e3yw_byuyuleten_ukraina.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+	display: inline-block; 
+	background-color: red;
+	width: 80%;
+	height: 400px; 
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+    
+}
+
+.sidebar{
+	background-color: aqua;
+	display: inline-block; 
+	width: 20%;
+	height: 400px;
+	float: left;
+ 
+}
+
+
+
+.dd1, .dd2, .dd3_cat {
+    width: 100px;
+	height: 100px;
+/*    margin: 10px;*/
+    padding-left: 10px
+}
+
+.dd1 {
+	background-color: #be1b66; 
+	display: inline-block;
+	vertical-align: top;
+;
+}
+
+.link2{
+    color: greenyellow;
+    font-size: 22px;
+    font-family: fantasy;
+}
+
+
+.dd2 {
+	background-color: blue;
+	display: inline-block; 
+	vertical-align: top;
+}
+
+.dd3_cat {
+	background-color: blue;
+	display: inline-block; 
+	vertical-align: top;
+}
+
+svg:hover .eye{
+	fill: red;
+	stroke: red;
+		}
+
+
+@media only screen and (max-width: 500px) {
+	
+	body {
+		background-image: none;
+		background-color: rosybrown;
+	}
+
+	.dd1 {
+		background-color: yellow; 
+		margin-bottom: 10px;
+		/* margin: 100%; */
+		/* display: ; */
+		width: 100%;
+	}
+
+
+	.dd2 {
+		background-color: blueviolet; 
+		margin-bottom: 10px;
+        padding-top: 10px;
+		/* display: inline-block; */
+		/* margin: 100%; */
+		width: 100%;
+	}
+    
+    .dd3_cat {
+/*		background-color: blueviolet; */
+		margin-bottom: 10px;
+        padding-top: 10px;
+		width: 100%;
+	}
+
+	.sidebar {
+		width: 100%;
+		float: right; 
+	}
+
+	.content {
+		width: 100%;
+		/* float: right; */
+	}
+
+}
+
+
+/* @media only screen and (min-width: 480px) {
+	body {
+	  background-color: lightgreen;
+	}
+  } */

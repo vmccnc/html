@@ -1,0 +1,97 @@
+body{
+	height: 2000;
+}
+
+p {
+	color: red;
+	/* font-family: Arial; */
+}
+
+#food {
+  color: green;
+}
+
+.wrap{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+	border: solid 3px #ff7347;
+}
+
+#col-left{
+	width:40%;
+	float: left;
+	border: solid 1px green;
+}
+
+#col-right{
+	width:59%;
+	float: left;
+	border: solid 1px blue;
+}
+
+#rel{
+	width:100px;
+	height: 100px;
+	background-color: red;
+position: relative;
+margin: 0 auto;
+}
+
+img{
+	display: block;
+	border: solid 3px black;
+	float:right;
+}
+
+.hotdog p.mustard{
+	background:blue;
+	color: yellow;
+}
+.hotdog p{
+	background:yellow
+}
+
+.btn {
+  font-size: 25px;
+}
+.btn-danger {
+  background: red;
+}
+
+
+.age{
+color: red;
+}
+
+ 
+.clearfix .lab             {
+    width: 37%; 
+	  float: left;
+    font-weight: bold;
+    color: green;
+ 
+}
+
+.clearfix .con             {
+  width: 60%; 
+	float: right;
+	font-weight: bold;
+}
+
+.clearfix .con:hover            {
+width: 60%; 
+float: right;
+font-weight: bold;
+border: blue 2px;
+}
+
+.just_text_on_right {
+	color: blueviolet;
+	border:  2px solid green;
+}
+
+.btn-success {
+  background: green;
+}
+

@@ -1,0 +1,158 @@
+body{
+	height: 2000;
+	background-image: url(https://img.tyt.by/720x720s/n/reuters/0e/7/perevod_vremeni_reuters_rtr1yvus.jpg);
+
+background-size: cover;
+/* background-size: contain; */
+/* background-repeat: no-repeat;
+background-size: 50% 50%; */
+/* background-position: center center; */
+background-attachment: fixed;
+/* background-attachment: scroll; */
+}
+
+p {
+	color: red;
+	/* font-family: Arial; */
+}
+
+#food {
+  color: green;
+}
+
+.wrap{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+	border: solid 3px #ff7347;
+
+}
+
+#col-left{
+	width:40%;
+	float: left;
+	border: solid 1px green;
+	/* background-image: url(https://img.tyt.by/720x720s/n/matveeva/02/0/mikhail_grib.jpg);
+	background-size: contain;  */
+}
+
+#col-right{
+	width:59%;
+	float: left;
+	border: solid 1px blue;
+}
+ 
+.avatar {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 5px solid  blueviolet;
+	border-radius: 50%;
+	padding: 2px;
+
+}  
+
+img{
+	
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+ .title {
+
+ }
+ .child {
+
+ }
+
+ .line{
+	 /* position: absolute; */
+	 border-color: brown;
+ }
+
+.hotdog p.mustard{
+	background:blue;
+	color: yellow;
+}
+/* .hotdog p{
+	background:yellow
+} */
+
+.btn {
+  font-size: 25px;
+}
+.btn-danger {
+  background: red;
+}
+
+
+.age{
+  color: red;
+}
+
+.just_text_on_right {
+	color: blueviolet;
+	border:  2px solid green;
+}
+ 
+.clearfix {
+		overflow: hidden;
+}
+
+.clearfix .lab             {
+    width: 37%; 
+	  float: left;
+    font-weight: bold;
+		color: green;
+
+ 
+}
+
+.clearfix .con             {
+  width: 60%; 
+	float: right;
+	font-weight: bold;
+}
+
+.clearfix .con:hover            {
+width: 60%; 
+float: right;
+font-weight: bold;
+border: blue 2px;
+}
+
+
+
+.btn-success {
+  background: green;
+}
+
+
+.nice_girl{
+	width:100px;
+	height: 100px;
+	background-color: #ff7347;
+	float: left;
+	border: solid 1px blue;
+	position: relative;
+	padding: 5px 50px 10px;
+	/* padding-left: 20px; */
+/* margin: 0 auto; */
+/* background-image: url(https://img.tyt.by/n/lady.tut.by/0c/3/kayli_dzhenner_titulka_1.jpg);
+background-size: contain;
+background-size: cover; */
+}
+
+ .margin{
+margin: 20px auto 10px ;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

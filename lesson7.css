@@ -1,0 +1,28 @@
+ 
+body {
+    background-color: #79e6ee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.class_cat_png{
+	width: 100px;
+	height: 100px;
+
+	position: relative;
+	top: 0px;
+	/* transition: .5s linear .5s;
+	animation: step_cat 1s linear .2s infinite alternate-reverse; */
+	transform:
+	rotate(30deg)
+	/* scale - это маштабирование */
+	/* scale(4) */
+	/* scaleX(4) scaleY(2) */
+
+	/* translate - Это смещение  */
+	/* translate(200px, 200px) */
+	translateX(200px) 
+}
+ 
