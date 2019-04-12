@@ -109,15 +109,72 @@ body {
  
    .tv1{
      height: 200px;
- 
+    border: 3px solid green ;
  }
  
   .tv2{
      height: 600px;
 	  
+/*
 	 background-image: url(http://pngimg.com/uploads/bmw/bmw_PNG1712.png);
 	  background-repeat: no-repeat;
-  background-size: cover;
+*/
+/*  background-size: cover;*/
+      border: 3px solid blue ;
  }
+
+.tv2_service {
+    width: 400px;
+    height: 50px;
+    margin: auto;
+ 
+}
+.tv2_service_one {
+    width: 400px;
+/*    height: 50px;*/
+    margin: auto;
+/*    border: 3px solid blue ;*/
+}
+
+.tv2_service_one h2 {
+text-align: center;
+
+}
+
+.tv2_service_text{
+    text-align: center;
+}
+
+.block{
+    border: 3px solid red ;
+}
+
+.block_left{
+   
+    width: 49%;
+    height: 400px;
+    border: 3px solid blue ;
+    float: right;
+  
+}
+
+
+
+
+.block_right{        
+      width: 49%;
+    height: 400px;
+    border: 3px solid yellow ;
+      
+}
+
+.block_left_photo{
+    width: 50px;
+    height: 100px;
+    float:left;
+        border: 3px solid blue ;
+}
+
+
  
  
