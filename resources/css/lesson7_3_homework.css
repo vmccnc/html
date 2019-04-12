@@ -183,7 +183,6 @@ text-align: center;
 .about_us_left{
     width: 50%;
     height: 400px;
-    
     padding: 30px 40px 10px 50px ;
  
     
@@ -206,8 +205,60 @@ text-align: center;
 	 background-image: url(http://pngimg.com/uploads/bmw/bmw_PNG1712.png);
 	 background-repeat: no-repeat;
      background-size: contain;
-    background-position: center center;
+     background-position: center center;
     
 }
  
  
+.chose_yor_price h1{
+/*  text-align: center; */
+   font-family:monospace;
+} 
+
+ 
+.chose_yor_price p{
+  text-align: center; 
+     
+} 
+
+.chose_yor_price {
+     border: 3px solid yellow ;
+     height: 600px;
+/*    align-content: center;*/
+     text-align: center;
+    background-color:gainsboro;
+}
+
+.block_price_transform{
+    height: 250px;
+    width: 200px;
+    border: 3px solid blue ;
+/*    float: right;*/
+    display: inline-block;
+    align-self: center;
+/*    margin: auto;*/
+    padding-top: 50px;
+    
+}
+
+
+.block_price_transform button{
+   padding: 10px 20px 10px 20px;
+}
+
+.block_price_transform:hover{
+    height: 270px;
+    width: 220px;
+    border: 3px solid green ;
+    margin: auto;    
+}
+
+.block_price_transform:hover{
+    color: green;
+    font-family:sans-serif;
+}
+
+.block_price_transform button:hover{
+   padding: 10px 30px 10px 30px;
+    background-color: aqua;
+}
