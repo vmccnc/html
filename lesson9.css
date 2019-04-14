@@ -1,0 +1,34 @@
+
+
+.block2{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+   box-shadow: 0 0 10px 5px #000;
+     transform: rotate(50deg);
+-moz-transform: rotate(90deg);
+}
+
+
+.block{
+width: 100%;
+height: 100px;
+background-color: red
+}
+
+
+
+.blockA{
+  /* background-color: red; */
+  height: 300px;
+}
+
+.blockB{
+/* background-color: blue; */
+height: 100px;
+}
+
+.blockC{
+/* background-color: yellow; */
+height: 100px;
+}
