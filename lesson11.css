@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr  1fr  1fr 1fr ;
-  grid-template-rows: 100px 100px 300px 300px;
+  grid-template-rows: 100px 100px 200px 200px;
   grid-gap: 10px;
 }
 
@@ -13,8 +13,16 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
+
+.boxThree2{
+  background-color: rgb(36, 136, 202);
+}
+.boxThree3{
+  background-color: chartreuse;
+}
+
 
 .boxThree4{
 background-color: #852EBA;
@@ -24,6 +32,21 @@ grid-column-end: 5;
 grid-row-end: 5; */
 }
 
+.boxThree5{
+  background-color: yellow;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  }
+
+  .boxThree6{
+background-color: aqua;
+  }
+
+  .boxThree7{
+    background-color: rgb(19, 221, 70);
+  }
 
 /* --------------------------------------------- */
 
