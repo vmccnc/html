@@ -1,34 +1,52 @@
 
-
-.block2{
-  height: 100px;
-  width: 100px;
-  background-color: red;
-   box-shadow: 0 0 10px 5px #000;
-     transform: rotate(50deg);
--moz-transform: rotate(90deg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-.block{
-width: 100%;
-height: 100px;
-background-color: red
+/* HEADER */
+header {
+    background-color: darkgrey;
+/*    background-image: url(/hero.jpg);*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
-
-
-.blockA{
-  /* background-color: red; */
-  height: 300px;
+.nameplant{
+    padding: 0px auto;
+/*    border: 1px solid red;   */
 }
 
-.blockB{
-/* background-color: blue; */
-height: 100px;
+h1 {
+    text-align: center;
+    font-family: monospace;
+        font-weight: 300;
+    text-transform: uppercase;
+            font-size: 240%;
+    color: #fff;
+        line-height: 1.15;
 }
 
-.blockC{
-/* background-color: yellow; */
-height: 100px;
+.center_image{
+    margin: auto;
+    width:900px ;
+/*    height:315px; */
+/*    border: 1px solid green;*/
+    
 }
+
+.center{
+    margin: 50px auto;
+/* border: 1px solid red; */
+    width:560px ;
+    height:315px; 
+}
+
+/*
+iframe{
+    margin: auto;
+    border: 1px solid green;
+}*/
