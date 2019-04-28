@@ -1,27 +1,60 @@
  
+h1{
+  /* text-align: center; */
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cent{
+  text-align: center; 
+}
+
 .wrapThree{
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr  1fr  1fr 1fr ;
-  grid-template-rows: 100px 100px 200px 200px;
-  grid-gap: 10px;
+  grid-template-columns: 1fr  1fr ;
+  grid-template-rows: 100px 400px 10px 10px;
+  /* grid-gap: 10px; */
+}
+
+span{
+  background-color: rgb(140, 189, 245);
+  padding-left: 5px; 
+  padding-right: 5px; 
 }
 
 .boxThree1{
-  background-color: purple;
+  padding-top: 20px;
+  padding-left: 50px;
+  background-color: antiquewhite;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
+ 
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 2;
 }
 
 .boxThree2{
-  background-color: rgb(36, 136, 202);
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 50px;
+  background-color: antiquewhite;
+  grid-column-start: 2;
+  grid-column-end: 3;
+ 
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
+
 .boxThree3{
-  background-color: chartreuse;
+  background-color: antiquewhite;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
+
 
 
 .boxThree4{
@@ -48,16 +81,71 @@ background-color: aqua;
     background-color: rgb(19, 221, 70);
   }
 
-/* --------------------------------------------- */
+
+
+
+
+/* ---- BUTTONS --- */
+/* ---------------  */
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.9s, border 0.9s, color 0.9s; 
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d20;
+}
+
+ 
+ 
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid gainsboro;
+    color: #fff;
+}
+
+
+.hero-text-box{
+  width: 200px;
+   margin: auto;
+   text-align: center;
+}
+
+
+
+
+/* ---------------------- 2 ----------------------- */
 
 
 .wrapTwo{
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr  1fr  1fr 1fr ;
-  grid-template-rows: 300px 200px  200px;
-  grid-gap: 10px;
+  grid-template-columns: 1fr  1fr ;
+  grid-template-rows: 200px 200px 100px 100px ;
+  /* grid-gap: 10px; */
 }
 
 .boxTwo1{
@@ -65,38 +153,48 @@ background-color: aqua;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 2;
 }
 
 .boxTwo2{
   background-color: purple;
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
 
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 
 .boxTwo3{
   background-color: #51EAFF;
+  
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding:20px;
 }
 
 .boxTwo4{
   background-color: yellow;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
   grid-row-end: 4;
 }
 
 .boxTwo5{
   background-color: green;
-}
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+} */
+/* 
 
 
-
- 
+ /* -------------------- */
 
 
 .wrapOne{
