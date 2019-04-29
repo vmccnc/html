@@ -1,8 +1,17 @@
  
+.context{
+   width: 80%; 
+     margin: 0 auto;
+}
+
 h1{
   /* text-align: center; */
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.boxThree3 h1{
+   text-align: center; 
 }
 
 .cent{
@@ -10,11 +19,11 @@ h1{
 }
 
 .wrapThree{
-  width: 80%;
-  margin: 0 auto;
+/*  width: 80%;*/
+/*  margin: 0 auto;*/
   display: grid;
   grid-template-columns: 1fr  1fr ;
-  grid-template-rows: 100px 400px 10px 10px;
+  grid-template-rows: 100px 250px 150px;
   /* grid-gap: 10px; */
 }
 
@@ -27,7 +36,7 @@ span{
 .boxThree1{
   padding-top: 20px;
   padding-left: 50px;
-  background-color: antiquewhite;
+  background-color: #eff0f2;
   grid-column-start: 1;
   grid-column-end: 2;
  
@@ -39,7 +48,7 @@ span{
   text-align: right;
   padding-top: 20px;
   padding-right: 50px;
-  background-color: antiquewhite;
+  background-color: #eff0f2;
   grid-column-start: 2;
   grid-column-end: 3;
  
@@ -48,7 +57,7 @@ span{
 }
 
 .boxThree3{
-  background-color: antiquewhite;
+  background-color: #eff0f2;
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 2;
@@ -58,13 +67,18 @@ span{
 
 
 .boxThree4{
-background-color: #852EBA;
-grid-column-start: 3;
-grid-column-end: 5;
-/* grid-row-start: 3;
-grid-row-end: 5; */
+ 
+text-align: right;
+    padding-right: 100px;
+    padding-top: -10px;
+background-color: #eff0f2;
+grid-column-start: 1;
+grid-column-end: 3;
+ grid-row-start: 3;
+grid-row-end: 4; 
 }
 
+/*
 .boxThree5{
   background-color: yellow;
   grid-column-start: 3;
@@ -80,13 +94,14 @@ background-color: aqua;
   .boxThree7{
     background-color: rgb(19, 221, 70);
   }
+*/
 
 
 
 
 
 /* ---- BUTTONS --- */
-/* ---------------  */
+/* ---------start------  */
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -94,28 +109,27 @@ background-color: aqua;
     font-weight: 300;
     text-decoration: none;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #eff0f2;
     transition: background-color 0.9s, border 0.9s, color 0.9s; 
 }
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #777879;
+    border: 1px solid #777879;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited{
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid #777879;
+    color: #777879;
 }
-
 
 .btn:hover,
 .btn:active{
-    background-color: #cf6d20;
+    background-color: #777879;
 }
 
  
@@ -123,7 +137,8 @@ background-color: aqua;
 .btn-ghost:hover,
 .btn-ghost:active{
     border: 1px solid gainsboro;
-    color: #fff;
+    border: 1px solid gainsboro;
+    color: #eff0f2;
 }
 
 
@@ -132,7 +147,8 @@ background-color: aqua;
    margin: auto;
    text-align: center;
 }
-
+/* ---------END------  */
+/* ---- BUTTONS --- */
 
 
 
@@ -140,16 +156,27 @@ background-color: aqua;
 
 
 .wrapTwo{
+/*
   width: 80%;
   margin: 0 auto;
+*/
   display: grid;
   grid-template-columns: 1fr  1fr ;
-  grid-template-rows: 200px 200px 100px 100px ;
+  grid-template-rows: 200px 300px 200px 100px ;
   /* grid-gap: 10px; */
 }
 
+.boxTwo1 h1,
+.boxTwo1 p{
+    text-align: center;
+}
+
+.boxTwo1 h1{
+    font-weight: 200;
+}
+
 .boxTwo1{
-  background-color: orange;
+  background-color: #f8fafa;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -157,7 +184,7 @@ background-color: aqua;
 }
 
 .boxTwo2{
-  background-color: purple;
+  background-color: #f8fafa;
   grid-column-start: 1;
   grid-column-end: 2;
 
@@ -167,17 +194,17 @@ background-color: aqua;
 
 
 .boxTwo3{
-  background-color: #51EAFF;
+  background-color: #f8fafa;
   
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding:20px;
+/*  padding:20px;*/
 }
 
 .boxTwo4{
-  background-color: yellow;
+  background-color: #f8fafa;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -185,12 +212,12 @@ background-color: aqua;
 }
 
 .boxTwo5{
-  background-color: green;
+  background-color: #f8fafa;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-} */
+}  
 /* 
 
 
