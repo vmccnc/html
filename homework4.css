@@ -221,9 +221,88 @@ background-color: aqua;
 /* 
 
 
- /* -------------------- */
+ /* --------- Wrap 3----------- */
 
 
+.wrap3{
+  display: grid;
+  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-rows: 200px 381px 381px 100px;
+  /* grid-gap: 10px; */
+}
+
+
+
+.box3{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+/*border: 1px solid red;*/
+    margin-top: 30px;
+}
+   
+/*
+.bos3_border{
+    margin: 1%;
+}
+*/
+
+.box3_1{
+  background-image: url("resources/img/homework4/menu1.png");
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin:0 1% 1% 0;
+}
+.box3_2{
+  background-image: url("resources/img/homework4/menu2.png");
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin:0 1% 1% 1%;
+
+}
+.box3_3{
+  background-image: url("resources/img/homework4/menu3.png");
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin:0 0 1% 1%;
+}
+.box3_4{
+  background-image: url("resources/img/homework4/menu3.png");
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+    margin:1% 1% 0 0;
+   
+}
+
+.box3_5{
+  background-image: url("resources/img/homework4/menu5.png");
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+   margin:  1% 1% 0 1%;
+}
+
+.box3_6{
+  background-image: url("resources/img/homework4/menu6.png");
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 1% 0 0 1%;
+}
+
+/*
 .wrapOne{
   width: 1000px;
   margin: 0 auto;
@@ -269,9 +348,10 @@ background-color: aqua;
 
 
 
+
  .box4{
   width: 100%;
-  /* height: 100px; */
+   
   background: green;
   border: 1px solid yellow;
  }
@@ -296,14 +376,14 @@ background-color: aqua;
 
 .box{
   width: 100%;
-  /* height: 100px; */
+  
   background: red;
   border: 1px solid green;
  }
 
  .box2{
   width: 100%;
-  /* height: 100px; */
+  
   background: green;
   border: 1px solid yellow;
  }
@@ -320,11 +400,6 @@ background-color: aqua;
    grid-row-gap: 10px;
  }
 
-
-
-
-
- 
  .wrap2{
   width: 1000px;
   margin: 0 auto;
@@ -343,3 +418,4 @@ background-color: aqua;
   grid-template-rows: 200px 400px;
   grid-gap: 10px;
 }
+*/
