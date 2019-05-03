@@ -1,0 +1,20 @@
+/*
+.carousel_text{
+    text-align: center;
+}*/
+
+
+nan_bar{
+    width: 80%; 
+}
+
+.navbar{
+    position: absolute;
+/*    margin: 0 10% 0;*/
+    z-index: 1;
+    width: 100%;
+}
+
+.section2{
+    padding:  7% 15%;
+}
