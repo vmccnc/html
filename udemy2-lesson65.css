@@ -74,6 +74,18 @@ p{
     right: 30%;
 }
 
+@media(max-width: 991px){
+    
+    #title{
+        text-align: center;
+    }
+    
+    .title-image{
+     position: static;
+     transform:  rotate(0deg);
+    }
+}
+
 
 /* ---- Features ---- */
 
@@ -159,7 +171,22 @@ p{
 }
 
 
+#cta {
+    padding: 7% 15%;
+    background-color: #ff4c68;
+    text-align: center;
+  line-height:1.5;
+}
 
+footer{
+    padding: 7% 15% 3%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.social_net{
+    margin: 10px;
+}
 
 
 
