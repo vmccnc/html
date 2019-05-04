@@ -2,6 +2,13 @@ body{
 	height: 2000;
 }
 
+hr{
+    background: green;
+/*    border-style: none;*/
+/*    height: 3px;*/
+}
+
+
 p{color: red}
 
 
@@ -35,7 +42,7 @@ ol li:nth-child(3n+4){
 
 #block{
 width: 100px;
-height: 100px;
+height: 20px;
 background-color: red;
 position: fixed;
 top: 0px;

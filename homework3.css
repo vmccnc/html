@@ -10,11 +10,24 @@ nan_bar{
 
 .navbar{
     position: absolute;
-/*    margin: 0 10% 0;*/
+    margin-left:15%;
+    margin-right:15%;
     z-index: 1;
-    width: 100%;
+    width: 70%;
 }
 
 .section2{
     padding:  7% 15%;
+}
+
+
+/*
+.carousel-item{
+    bottom: 200px;
+}
+*/
+
+.carousel-control-next, 
+.carousel-control-prev{
+  width: 10%;  
 }

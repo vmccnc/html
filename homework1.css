@@ -1,0 +1,74 @@
+ 
+h1{
+    color: aquamarine;
+}
+
+.contaner{
+    width: 80%;
+     border: 1px solid yellow;
+      
+}
+
+
+
+.sideleft{
+    width: 39%;
+     border: 1px solid green;
+/*     float: left;*/
+}
+
+.sideright{
+
+    width: 59%;
+   border: 1px solid green;
+}
+
+.profile{
+    border: 1px solid blue;
+/*    display: inline;*/
+}
+
+.profile-name{    
+    width: 49%;
+    height: 40px;
+    border: 1px solid green;
+/*    float: right;*/
+}
+    
+.profile-line{
+  
+    width: 49%;
+    height: 40px;
+    padding: auto 0 auto 0;
+    border: 1px solid red;
+    
+}
+
+ 
+
+hr{
+    width: 80%;
+/*    background-color: aqua;*/
+/*
+    border-top-style: dotted;
+    border-bottom-style: none;
+*/
+    border-width: 5px;
+    border-color: gray;
+    border-style: dotted none none;
+/*    height: 2px;*/
+}
+
+
+.glass_blue{
+    background-color:aliceblue;
+}
+
+.glass_yellow{
+    background-color:antiquewhite;
+    height: 40px;
+}
+
+
+
+

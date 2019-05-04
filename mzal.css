@@ -6,6 +6,16 @@
 }
 
 
+/*
+.navbar{
+    position: absolute;
+    margin-left:15%;
+    margin-right:15%;
+    z-index: 1;
+    width: 70%;
+}
+*/
+
 /* HEADER */
 header {
     background-color: darkgrey;
