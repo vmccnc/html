@@ -9,7 +9,7 @@ body {
 .block_all_site{
 		width: 80%;
 		margin: 40px auto;
-		border: solid 3px red;
+/*		border: solid 2px red;*/
 }
  
  
@@ -17,33 +17,39 @@ body {
 	width: 100%; 
 	height: 50px;
 /*	border: solid 2px green;*/
+     margin: 15px 10% 0 10%;
  }
  
- .for_logo{
-	 float: left;
-	 width: 400px;
+ .for_logo{ 
+	 width: 10%;
  }
+  
+ .for_contacts{
+/*	 float: left;*/
+     float: right;
+     text-align: center;
+	 width: 90%;
+ }
+/*
  
  .bmw_{
   display: block;
   margin-left: auto;
   margin-right: auto; 
  }
+*/
  
  .nav{
 	 height:20px;
 	 float:left;
-	 margin:  10px 20px auto 20px;
+	 margin:  10px 7px auto ;
+     padding: 5px;
 /*	 border: solid 2px green;*/
  }
  .nav:hover {
-	 height:20px;
-	 float:left;
-	 margin:  10px 20px auto 20px;
-	 background-color: darkorange;
-     color: pink;
-     font-family:verdana;
-/*	 border: solid 2px pink;*/
+	 background-color: #ffbb42;
+/*     color: pink;*/
+
  }
  
  
@@ -74,11 +80,12 @@ body {
   
   
  .first{
-	width: 100%; 
+/*	width: 100%; */
 	height: 400px;
 /*	border: solid 2px green;*/
 	background-color: #709dca;
-	margin: auto; 
+/*	margin: auto; */
+     padding: 15px 10% 0 10%;
 /*	border: 1px solid red ;*/
  }
  
@@ -113,21 +120,25 @@ body {
 }
 
 
+/*
  .a2{
        display: inline;
-/*	 float: left;*/
+	 float: left;
 	 margin-right: 10px ;
 	  margin-left: 10px ;
  }
+*/
  
  .a2_img{
 /*	float: left; */
  }
+/*
  .a4{
      display: inline;
 	margin-right: 10px ;
 	margin-left: 10px ; 
  }
+*/
  
  .tv{
 	 margin-left:auto;
@@ -143,14 +154,8 @@ body {
  }
  
   .tv2{
-     height: 1600px;
-	  
-/*
-	 background-image: url(http://pngimg.com/uploads/bmw/bmw_PNG1712.png);
-	  background-repeat: no-repeat;
-*/
-/*  background-size: cover;*/
-/*      border: 3px solid blue ;*/
+/*     height: 1600px;*/
+margin:0 10% 0;
  }
 
 .tv2_service {
@@ -209,37 +214,49 @@ text-align: center;
 
 
 .about_us{
-   height: 400px;
+/*   height: 500px;*/
 }
 
 .about_us_left{
     width: 50%;
-    height: 400px;
-    padding: 30px 40px 10px 50px ;
- 
-    
-    border: 1px solid blue ;
+    height: 500px;
+    padding: 50px 10% 10px 50px ;
+/*    border: 1px solid blue ;*/
     float: right;
+    background-color: #ffc155;
+    box-sizing: border-box;
+}
+
+.about_us_right{
+    text-align: right;
+     width: 50%;
+     height: 500px;
+/*     border: 1px solid green ;*/
+/*    padding: a*/
+	 background-image: url("resources/img/homework2/about_us.png");
+	 background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center center;
+ 
 }
 
 .about_us_left h1{
     font-family:verdana;
+    color: #fff;
 }
-.about_us_left button{
-   padding: 10px 40px 10px 40px;
+.about_us_left p{
+    color: #fff;
 }
 
-.about_us_right{
-     width: 50%;
-     height: 400px;
-     border: 1px solid green ;
-/*    padding: a*/
-	 background-image: url(http://pngimg.com/uploads/bmw/bmw_PNG1712.png);
-	 background-repeat: no-repeat;
-     background-size: contain;
-     background-position: center center;
-    
+
+.button_about_us{
+   padding: 10px 40px 10px 40px;
+/*    margin: 5px;*/
+    background-color: #ffc155;
+    color: #fff;
 }
+
+
  
  
 .chose_yor_price h1{

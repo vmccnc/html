@@ -1,0 +1,53 @@
+
+body{
+    margin: 0;
+}
+.text p{
+    margin-top: 0;
+}
+
+
+.homework{
+    border: 1px dashed red;
+  width: 70%;
+}
+
+.homework_bigtext
+.udemy{
+  text-align: center;
+}
+
+.homework-left {
+    width: 50%;
+    border: 1px dashed green;
+     background-color: aliceblue;
+   border-style: dotted;
+    border-width: 5px;
+    padding: 0 10px 0;
+}
+
+
+.homework-right {
+    width: 50%;
+    border: 1px dashed green;
+     float: right;
+   
+}
+
+.text{
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+/*
+body{
+     background-color: aquamarine;
+}*/
+
+.classwork{
+    border-width: 3px;
+    border-color: aqua;
+    border-style: dotted;
+    border-left: 0;
+    border-right: 0;
+}
