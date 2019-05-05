@@ -31,3 +31,13 @@ nan_bar{
 .carousel-control-prev{
   width: 10%;  
 }
+
+.colorrrr {
+/* background-color: blue; */
+color: red;
+}
+
+.nav-pills  .nav-link.colorrrr.active {
+    background-color: green;
+    
+    }
