@@ -505,3 +505,55 @@ background-color: aqua;
 */
 /*    padding: 10%;*/
 }
+
+
+
+.wrap7brands{
+    padding: 0 10% 0;
+    text-align: center;
+    margin: 50px 10px 40px;
+}
+
+.photo_brands{
+    padding: 20px;
+}
+
+
+/*------------ box 8 -------------------*/
+
+.wrap8{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows:  440px ; 
+  grid-gap: 20px; 
+   background-image: url("resources/img/homework4/back8.png");
+    padding: 10%;
+/*
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+*/
+    
+}
+
+
+.box8_1{
+    
+    background-color:#4a5962 ;
+     opacity: 0.7;
+    
+}
+.box8_2{
+    background-color: #4a5962;
+    opacity: 0.7;
+}
+
+/*-----  ---   9  ----  -----*/
+
+.wrap9{
+   background-color: #262b2e;
+    height: 300px;
+
+}
+
+
