@@ -1,7 +1,7 @@
  
 .context{
    width: 80%; 
-     margin: 0 auto;
+   margin: 0 auto;
 }
 
 h1{
@@ -187,7 +187,6 @@ background-color: aqua;
   background-color: #f8fafa;
   grid-column-start: 1;
   grid-column-end: 2;
-
   grid-row-start: 2;
   grid-row-end: 4;
 }
@@ -195,7 +194,6 @@ background-color: aqua;
 
 .boxTwo3{
   background-color: #f8fafa;
-  
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -302,120 +300,208 @@ background-color: aqua;
   margin: 1% 0 0 1%;
 }
 
-/*
-.wrapOne{
-  width: 1000px;
-  margin: 0 auto;
+/*------------ box 4 -------------------*/
+
+.wrap4{
   display: grid;
-  grid-template-columns: 1fr  1fr  ;
-  grid-template-rows: 200px 300px;
+  grid-template-columns: repeat(12, 1fr); ;
+  grid-template-rows: 200px 415px 370px  370px 100px; 
+  grid-gap: 10px; 
 }
 
-.boxOne1{
-  background-color: violet;
+.box4_{
+  text-align: center;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+/*border: 1px solid red;*/ 
 }
 
-.boxOne2{
-  background-color: aqua;
+.box4_1{
+    background-color: #70f4e9;
+    padding: 10%;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3; 
 }
 
-
-.boxOne3{
-  background-color: orange;
+.box4_2{
+    background-color: #efefef;
+    padding: 10%;
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3; 
 }
 
+.box4_3{
+    background-color: #efefef;
+    padding: 10%;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+}
 
+.box4_4{
+    background-color: #efefef;
+    padding: 10%;
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+}
 
+.box4_5{
+    background-color: #efefef;
+    padding: 10%;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5; 
+}
 
+.box4_6{
+    background-color: #efefef;
+    padding: 10%;
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 5; 
+}
+/*------------ box 5 -------------------*/
 
 .wrap5{
-  width: 1000px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 300px 1fr  ;
-  grid-template-rows: 200px 300px 200px;
-  grid-row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 440px 440px 100px; 
+  grid-gap: 10px; 
+/*  background-color: antiquewhite;*/
+    text-transform: uppercase;
 }
 
-#box5{
-  background-color: aqua;
+
+.box5{
+     text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2; 
+/*border: 1px solid red;*/ 
 }
 
-
-
-
-
- .box4{
-  width: 100%;
-   
-  background: green;
-  border: 1px solid yellow;
- }
-
- .wrap4{
-  width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 300px 1fr  ;
-  grid-template-rows: 200px 400px;
-  grid-row-gap: 10px;
-}
-
-#box4{
-  background-color: aqua;
+.box5_1{
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+    background-image: url("resources/img/homework4/team1.png");
+    background-position: center;
 }
 
+.box5_2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+    background-image: url("resources/img/homework4/team2.png");
+    background-position: center;
+}
 
+.box5_3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+    background-image: url("resources/img/homework4/team3.png");
+    background-position: center;
+}
 
+.box5_4{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+    background-image: url("resources/img/homework4/team4.png");
+    background-position: center;
+}
 
-.box{
-  width: 100%;
-  
-  background: red;
-  border: 1px solid green;
- }
+.box5_5{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+    background-image: url("resources/img/homework4/team5.png");
+    background-position: center;
+}
 
- .box2{
-  width: 100%;
-  
-  background: green;
-  border: 1px solid yellow;
- }
+.box5_6{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+    background-image: url("resources/img/homework4/team6.png");
+    background-position: center;
+}
 
+/*------------ box 6 -------------------*/
 
-
-
- .wrap{
-   width: 1000px;
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: 1fr 300px 1fr  ;
-   grid-template-rows: 200px 400px;
-   grid-row-gap: 10px;
- }
-
- .wrap2{
-  width: 1000px;
-  margin: 0 auto;
+.wrap6{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 200px 400px;
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 360px 100px 100px; 
+  grid-gap: 10px; 
+  background-color: #f9fbfb;
+/*    text-transform: uppercase;*/
+    padding: 0 10% 0;
 }
 
-
-.wrap3{
-  width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr minmax(100px, 400px) 1fr;
-  grid-template-rows: 200px 400px;
-  grid-gap: 10px;
+.box6_{
+     text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+/*border: 1px solid red;*/ 
 }
+
+.box6_1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  background-color: #eaebed;
+/*  background-position: center;*/
+    text-align: center;
+}
+
+.photo6{
+    width: 320px;
+    margin: -10px;
+}
+
+.box6_2{
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+    background-color: #eaebed;
+    background-position: center;
+    padding: 10%;
+}
+
+.box6_4{
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+      text-align: right;
+/*    float: right;*/
+/*
+    background-color: #eaebed;
+    background-position: center;
 */
+/*    padding: 10%;*/
+}
