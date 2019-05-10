@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+
+
+.start{
+/*    height: 680px;*/
+    height: 100vh;
+    background-image: url("resources/img/diploma/back_start.png");
+/*     background-color: aquamarine;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+    padding: 15% 10% 10%;
+    box-sizing: border-box;
+}
+
+.start h1{
+    font-size: 80px;
+    font-family: sans-serif;
+    color: #fff;
+/*    display: inline;*/
+/*    width: 80%;*/
+}
+
+
+
+.navbar{
+    position: absolute;
+    margin-left:5%;
+    margin-right:5%;
+    z-index: 1;
+    width: 90%;
+ 
+}
+
+.navbar-light .navbar-nav .nav-link{
+   color: #fff; 
+}
+
+.navbar-light .navbar-brand{
+    color: #fff; 
+}
+/*
+.nav-item a{
+  color: #fff;
+}
+*/
+
+.start .btn.button_color{
+  color: #fff;
+    background-color: #7ca5d9;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+
+/*----------- Section 2 -----------*/
+
+.section2{
+/*    height: 680px;*/
+    height: 235px;
+     background-color: #9779a9;
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.button_download{
+    border: 1px solid #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    color: #fff;
+}
