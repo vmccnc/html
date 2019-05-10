@@ -78,24 +78,10 @@ grid-column-end: 3;
 grid-row-end: 4; 
 }
 
-/*
-.boxThree5{
-  background-color: yellow;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  }
-
-  .boxThree6{
-background-color: aqua;
-  }
-
-  .boxThree7{
-    background-color: rgb(19, 221, 70);
-  }
-*/
-
+.pict_glass{
+    position: relative;
+    top: -30px;
+}
 
 
 

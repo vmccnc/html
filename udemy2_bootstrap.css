@@ -8,3 +8,8 @@ carousel-item{
     height: 500px;
     width: 300px;
 }
+
+.picture_relative{
+    position: relative;
+    left: 50px;
+}
