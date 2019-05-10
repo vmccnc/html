@@ -38,7 +38,16 @@
 
 .navbar-light .navbar-nav .nav-link{
    color: #fff; 
+    padding-right: 1.5rem;
+    padding-left: 1.5rem
 }
+
+/*
+.navbar-nav 
+.nav-link {
+        
+}
+*/
 
 .navbar-light .navbar-brand{
     color: #fff; 
@@ -77,3 +86,48 @@
     border-radius: 20px;
     color: #fff;
 }
+
+
+/*----------- Section 3 -----------*/
+
+.section3{
+     height: 550px;
+ background-image: url("resources/img/diploma/back3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    text-align: left;
+    padding-top: 40px;
+    color: #595959;
+
+padding: 7% 55% 5% 5%;
+   
+}
+
+
+
+
+
+/*----------- Section 4 -----------*/
+
+.section4{
+     height: 430px;
+ background-color: #46b782;
+ 
+    padding-top: 40px;
+/*    color: #595959;*/
+
+/*padding: 7% 55% 5% 5%;*/
+   
+}
+
+
+
+
+
+
+
+
+
+
+
