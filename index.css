@@ -7,6 +7,14 @@ body{
 }
 
 
+
+.diploma{
+    margin-top: 50px;
+    padding: 5%;
+    border: 3px dotted red;
+    text-align: center;
+}
+
 .homework{
     border: 1px dashed red;
   width: 70%;
