@@ -5,16 +5,57 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    font-family: monospace;
+        font-weight: 300;
+/*    text-transform: uppercase;*/
+            font-size: 240%;
+    color: #fff;
+        line-height: 1.15;
+}
 
-/*
+
+
+
+.start{
+/*    height: 680px;*/
+    height: 100vh;
+    background-image: url("resources/img/mzal/KM225.jpg");
+/*     background-color: aquamarine;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+
+    padding: 15% 10% 10%;
+    box-sizing: border-box;
+}
+
+
+.start h1{
+    font-size: 5rem; /* 5rem !! or  500% or 5em (enherit); */
+    font-family: sans-serif;
+/*    font-family: 'Pacifico', cursive;*/
+    color: #fff;
+/*    display: inline;*/
+/*    width: 80%;*/
+}
+
 .navbar{
     position: absolute;
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:5%;
+    margin-right:5%;
     z-index: 1;
-    width: 70%;
+    width: 90%;
 }
-*/
+
+
+
+
+
+
+
 
 /* HEADER */
 header {
@@ -30,16 +71,6 @@ header {
 /*    border: 1px solid red;   */
 }
 
-h1 {
-    text-align: center;
-    font-family: monospace;
-        font-weight: 300;
-    text-transform: uppercase;
-            font-size: 240%;
-    color: #fff;
-        line-height: 1.15;
-/*    dd*/
-}
 
 .center_image{
     margin: auto;

@@ -18,13 +18,28 @@
 }
 
 .start h1{
-    font-size: 80px;
+    font-size: 5rem; /* 5rem !! or  500% or 5em (enherit); */
     font-family: sans-serif;
     color: #fff;
+    line-height: 1.5;
 /*    display: inline;*/
 /*    width: 80%;*/
 }
 
+@media(max-width: 991px){
+    
+  .start h1{  
+      font-size: 400%;
+    }
+}
+
+@media(max-width: 600px){
+    
+  .start h1{  
+      font-size: 200%;
+    }
+    
+}
 
 
 .navbar{
@@ -33,21 +48,20 @@
     margin-right:5%;
     z-index: 1;
     width: 90%;
- 
 }
 
 .navbar-light .navbar-nav .nav-link{
-   color: #fff; 
+    color: #fff; 
     padding-right: 1.5rem;
     padding-left: 1.5rem
 }
 
-/*
-.navbar-nav 
-.nav-link {
-        
+.nav-item a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: border-bottom 0.2s;
 }
-*/
+ 
 
 .navbar-light .navbar-brand{
     color: #fff; 
@@ -124,10 +138,125 @@ padding: 7% 55% 5% 5%;
 
 
 
+/*----------- Section 5 -----------*/
+
+.section5white{
+     height: 165px;
+ background-color: #fff;
+ 
+/*    padding-top: 40px;*/
+/*    color: #595959;*/
+
+/*padding: 7% 55% 5% 5%;*/
+   
+}
+
+
+
+/*----------- Section 6 -----------*/
+
+.section6grey{
+     height: 330px;
+ background-color: #f4f4f4;
+ 
+/*    padding-top: 40px;*/
+/*    color: #595959;*/
+
+/*padding: 7% 55% 5% 5%;*/
+   text-align: center;
+}
+
+/*
+.for_tv{
+     height: 462px;
+     margin: 20px; 
+    background-image: url("resources/img/diploma/tvAndPhone.png");
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+*/
+
+.tv{
+   margin: -20px; 
+}
+
+
+
+    
+
+/*----------- Section 7 -----------*/
+
+.section7blue{
+/*     height: 400px;*/
+ background-color: #688ebe;
+ 
+padding: 160px 5% 80px 5%;
+text-align: center; 
+    color: #fff;
+}
+
+.section7blue h1{
+/*    line-height: 2;*/
+    margin-bottom: 70px;
+}
+
+.feature-box{
+    margin-bottom: 40px;
+}
+
+
+
+
+/*----------- Section 8 -----------*/
+
+.section8{
+     height: 480px;
+ background-color: #fff;
+ 
+padding: 160px 5% 80px 5%;
+text-align: center; 
+    color: #fff;
+}
 
 
 
 
 
+/*----------- Section 9 -----------*/
+
+.section9{
+     height: 125px;
+ background-color: #212933;
+ 
+/*
+padding: 160px 5% 80px 5%;
+text-align: center; 
+*/
+    color: #fff;
+}
+
+
+
+
+@media(max-width: 600px){
+    .section5white{
+         height: 80px;
+        }
+
+    .section6grey{
+          height: 200px;
+        }
+
+    .tv{
+          height: 250px;
+        }
+
+    /*---  7  --*/
+     .section7blue{ 
+         padding-top: 50px ;
+        }  
+}
 
 
