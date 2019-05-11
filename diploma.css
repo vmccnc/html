@@ -124,18 +124,24 @@ padding: 7% 55% 5% 5%;
 
 /*----------- Section 4 -----------*/
 
-.section4{
-     height: 430px;
- background-color: #46b782;
+.section4green{
+/*     height: 430px;*/
+     background-color: #46b782;
  
-    padding-top: 40px;
-/*    color: #595959;*/
-
-/*padding: 7% 55% 5% 5%;*/
-   
+/*    padding-top: 40px;*/
+   padding: 7% 5% 7% 5%;
+   text-align: center;
 }
 
+.green4 {
+    height: 305px;
+    padding: 20px 10px;
+    border-radius: 50px;
+}
+.green4:hover {
 
+    border: 2px dashed #fff;
+}
 
 
 /*----------- Section 5 -----------*/
