@@ -212,15 +212,19 @@ text-align: center;
 /*----------- Section 8 -----------*/
 
 .section8{
-     height: 480px;
- background-color: #fff;
+ height: 480px;
+ background-color: gainsboro;
  
 padding: 160px 5% 80px 5%;
+    
+/*font-size: 0.9rem;*/
 text-align: center; 
-    color: #fff;
+color: #fff;
 }
 
-
+.carousel-item{
+     padding: 3% 20%;
+}
 
 
 
@@ -241,6 +245,7 @@ text-align: center;
 
 
 @media(max-width: 600px){
+    
     .section5white{
          height: 80px;
         }
@@ -256,7 +261,12 @@ text-align: center;
     /*---  7  --*/
      .section7blue{ 
          padding-top: 50px ;
-        }  
+        } 
+    
+/*    -- 8 --    */
+    .carousel-item{
+     padding: 3% 10%;
+}
 }
 
 
