@@ -362,7 +362,7 @@ grid-row-end: 4;
 .wrap5{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px 440px 440px 100px; 
+  grid-template-rows: 200px auto auto 100px; 
   grid-gap: 10px; 
 /*  background-color: antiquewhite;*/
     text-transform: uppercase;
@@ -383,17 +383,22 @@ grid-row-end: 4;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3; 
-    background-image: url("resources/img/homework4/team1.png");
+    /* background-image: url("resources/img/homework4/team1.png"); */
     background-position: center;
 }
+
+.pict5_1{
+  width: 100%;
+}
+
 
 .box5_2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3; 
-    background-image: url("resources/img/homework4/team2.png");
-    background-position: center;
+    /* background-image: url("resources/img/homework4/team2.png"); */
+    /* background-position: center; */
 }
 
 .box5_3{
@@ -401,8 +406,8 @@ grid-row-end: 4;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3; 
-    background-image: url("resources/img/homework4/team3.png");
-    background-position: center;
+    /* background-image: url("resources/img/homework4/team3.png");
+    background-position: center; */
 }
 
 .box5_4{
@@ -410,8 +415,8 @@ grid-row-end: 4;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4; 
-    background-image: url("resources/img/homework4/team4.png");
-    background-position: center;
+    /* background-image: url("resources/img/homework4/team4.png");
+    background-position: center; */
 }
 
 .box5_5{
@@ -419,8 +424,8 @@ grid-row-end: 4;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4; 
-    background-image: url("resources/img/homework4/team5.png");
-    background-position: center;
+    /* background-image: url("resources/img/homework4/team5.png");
+    background-position: center; */
 }
 
 .box5_6{
@@ -428,8 +433,8 @@ grid-row-end: 4;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4; 
-    background-image: url("resources/img/homework4/team6.png");
-    background-position: center;
+    /* background-image: url("resources/img/homework4/team6.png");
+    background-position: center; */
 }
 
 /*------------ box 6 -------------------*/
@@ -524,9 +529,9 @@ grid-row-end: 4;
 
 
 .box8_1{
-    
-    background-color:#4a5962 ;
-     opacity: 0.7;
+  background-color: rgba(74, 89,98,.7);
+ 
+     /* opacity: 0.7;   - not correct*/
     
 }
 .box8_2{
