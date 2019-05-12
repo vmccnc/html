@@ -210,9 +210,9 @@ grid-row-end: 4;
 
 .wrap3{
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr;
-  grid-template-rows: 200px 381px 381px 100px;
-  /* grid-gap: 10px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px  auto auto 100px;
+  grid-gap: 10px;
 }
 
 
@@ -232,58 +232,61 @@ grid-row-end: 4;
     margin: 1%;
 }
 */
+.imagefor3{
+  width: 100%;
+  height: 100%;
+}
 
 .box3_1{
-  background-image: url("resources/img/homework4/menu1.png");
+  /* background-image: url("resources/img/homework4/menu1.png"); */
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin:0 1% 1% 0;
 }
 .box3_2{
-  background-image: url("resources/img/homework4/menu2.png");
+  /* background-image: url("resources/img/homework4/menu2.png"); */
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin:0 1% 1% 1%;
+
 
 }
 .box3_3{
-  background-image: url("resources/img/homework4/menu3.png");
+  /* background-image: url("resources/img/homework4/menu3.png"); */
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin:0 0 1% 1%;
+  /* margin:0 0 1% 1%; */
 }
 .box3_4{
-  background-image: url("resources/img/homework4/menu3.png");
+  /* background-image: url("resources/img/homework4/menu3.png"); */
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-    margin:1% 1% 0 0;
+    /* margin:1% 1% 0 0; */
    
 }
 
 .box3_5{
-  background-image: url("resources/img/homework4/menu5.png");
+  /* background-image: url("resources/img/homework4/menu5.png"); */
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-   margin:  1% 1% 0 1%;
+   /* margin:  1% 1% 0 1%; */
 }
 
 .box3_6{
-  background-image: url("resources/img/homework4/menu6.png");
+  /* background-image: url("resources/img/homework4/menu6.png"); */
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin: 1% 0 0 1%;
+  /* margin: 1% 0 0 1%; */
 }
 
 /*------------ box 4 -------------------*/

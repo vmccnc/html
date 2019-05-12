@@ -13,6 +13,8 @@ body{
     padding: 5%;
     border: 3px dotted red;
     text-align: center;
+    
+    overflow: hidden;
 }
 
 .homework{
