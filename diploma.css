@@ -52,8 +52,15 @@
 
 .navbar-light .navbar-nav .nav-link{
     color: #fff; 
+    /* border-bottom: 2px solid transparent; */
     padding-right: 1.5rem;
     padding-left: 1.5rem
+}
+
+.nav-item a{
+    
+    border-bottom: 2px solid transparent;
+   
 }
 
 .nav-item a:hover{
@@ -133,6 +140,7 @@ padding: 7% 55% 5% 5%;
 .green4 {
     height: 305px;
     padding: 20px 10px;
+    border: 2px solid transparent;
     border-radius: 50px;
 }
 
