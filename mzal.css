@@ -10,9 +10,9 @@ h1 {
     font-family: monospace;
         font-weight: 300;
 /*    text-transform: uppercase;*/
-            font-size: 240%;
+    font-size: 240%;
     color: #fff;
-        line-height: 1.15;
+    line-height: 1.15;
 }
 
 
@@ -26,7 +26,7 @@ body{
     margin-right:5%;
     z-index: 1;
     width: 90%;
-    padding: 0 10%;
+/*    padding: 0 10%;*/
 }
 
 .navbar-light {
@@ -62,7 +62,13 @@ font-size: larger;
 .nav-item a:hover{
      border-bottom: 2px solid #fff;
 }
-    
+  
+.dropdown-item{
+     font-family: 'Exo 2', sans-serif;
+}
+
+
+
 .start{
 /*    position: relative;*/
     height: 100vh;
@@ -73,7 +79,7 @@ font-size: larger;
     background-position: bottom;
     text-align: center;
 
-    margin: 0 10%;
+/*    margin: 0 10%;*/
     padding: 15% 10% 10%;
     box-sizing: border-box;
 }
@@ -85,7 +91,7 @@ font-size: larger;
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
 /*    font-family: 'Pacifico', cursive;*/
-    color: rgba(255,255,255,.9);
+    color: rgba(255,255,255,.8);
 /*    display: inline;*/
 /*    width: 80%;*/
 }
