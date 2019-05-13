@@ -21,24 +21,29 @@ nan_bar{
 }
 
 
-/*
-.carousel-item{
-    bottom: 200px;
-}
-*/
+ 
 
 .carousel-control-next, 
 .carousel-control-prev{
   width: 10%;  
 }
 
+.btn_Get_Started{
+   font-size: .7rem;
+   background-color: #998675;
+   color: #fff;
+    padding: 10px 18px; 
+}
+
+
+
 .colorrrr {
 /* background-color: blue; */
-color: red;
+color: #8c8c8c;
 }
 
 .nav-pills  .nav-link.colorrrr.active {
-    background-color: green;
+    background-color: #998675;
     
     }
 
@@ -51,3 +56,17 @@ color: red;
     .green4{
        width: 100%;
     }
+
+
+/*-- Contant 3  ---*/
+
+.content3{
+    text-align: center;
+}
+
+.button_load_more{
+    background-color: #998675;
+    color: #fff;
+}
+
+

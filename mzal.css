@@ -16,30 +16,8 @@ h1 {
 }
 
 
-
-
-.start{
-/*    height: 680px;*/
-    height: 100vh;
-    background-image: url("resources/img/mzal/KM225.jpg");
-/*     background-color: aquamarine;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-
-    padding: 15% 10% 10%;
-    box-sizing: border-box;
-}
-
-
-.start h1{
-    font-size: 5rem; /* 5rem !! or  500% or 5em (enherit); */
-    font-family: sans-serif;
-/*    font-family: 'Pacifico', cursive;*/
-    color: #fff;
-/*    display: inline;*/
-/*    width: 80%;*/
+body{
+    background-color: #fff;
 }
 
 .navbar{
@@ -48,13 +26,102 @@ h1 {
     margin-right:5%;
     z-index: 1;
     width: 90%;
+    padding: 0 10%;
+}
+
+.navbar-light {
+font-size: larger;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(255,255,255,.7);
+    font-family: 'Exo 2', sans-serif;
+}
+.navbar-light .navbar-brand:hover{
+    color: rgba(255,255,255,.9);
+}
+
+.navbar-light
+.navbar-nav 
+.nav-link{
+    color: rgba(255,255,255,.7);
+    font-family: 'Exo 2', sans-serif;
+/*    border-bottom: 2px solid red;*/
 }
 
 
+.navbar-light
+.navbar-nav 
+.nav-link:hover{
+    color: rgba(255,255,255,.9);
+}
+
+.nav-item a{
+     border-bottom: 2px solid transparent;
+}
+.nav-item a:hover{
+     border-bottom: 2px solid #fff;
+}
+    
+.start{
+/*    position: relative;*/
+    height: 100vh;
+    background-image: url("resources/img/mzal/KM225.jpg");
+/*     background-color: aquamarine;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+
+    margin: 0 10%;
+    padding: 15% 10% 10%;
+    box-sizing: border-box;
+}
 
 
+.start h1{
+    font-size: 3rem; /* 5rem !! or  500% or 5em (enherit); */
+/*    font-family: sans-serif;*/
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+/*    font-family: 'Pacifico', cursive;*/
+    color: rgba(255,255,255,.9);
+/*    display: inline;*/
+/*    width: 80%;*/
+}
 
 
+.button_color{
+   padding: 1% 5%;
+    background-color: blueviolet;
+    border-radius: 20px;
+     color: rgba(255,255,255,.7);
+}
+
+
+.button_color:hover{
+      background-color: blue;
+    color: rgba(255,255,255,.99);
+}
+
+
+.forvideo{
+    position: fixed;
+/*    width: auto; */
+    right: 20px;
+    bottom: 20px;
+    border:3px solid #EEE;
+}
+
+iframe{
+    width: 100%; 
+    height: 100%;       
+}
+
+iframe:hover{
+   width: 560px; 
+   height: 315px;
+}
 
 
 /* HEADER */
