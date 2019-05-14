@@ -114,12 +114,50 @@ color: #8c8c8c;
 
 /*  - - - content 5 - - - */
 
+.card-body {
+   text-align: left; 
+    position: relative;
+    color: #fff;
+/*    z-index: 2;*/
+}
+
+
+
+.card-text{
+    color: #c7b299;
+    margin-bottom: 0px;
+}
+
+.card-text:last-child{
+    color: #d1d1d1; 
+    
+}
+
+ 
 
 .text5{
     margin: 7% 15% 3% 15%;;
     text-align: center;
     color: #555555;
 }
+
+.rectangle{
+    position: absolute;
+    left: -45px;
+    top: 20px;
+    width: 150px;
+	height: 150px;
+   background-color: #fff;;
+   transform: rotate(45deg);
+/*     z-index: 1;*/
+}
+
+.rectangle:hover,
+.card-body:hover{
+    background-color: #362f2d;
+}
+ 
+
 
 
 .green4{
