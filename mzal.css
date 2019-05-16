@@ -13,6 +13,11 @@ h1 {
     font-size: 240%;
     color: #fff;
     line-height: 1.15;
+    font-family: 'Exo 2', sans-serif;
+}
+
+p{
+   font-family: 'Exo 2', sans-serif;   
 }
 
 
@@ -111,11 +116,14 @@ font-size: larger;
 }
 
 
+
+/*-----  video on the right and bottom -------*/
+
+/*
 .forvideo{
     position: fixed;
-/*    width: auto; */
     right: 20px;
-    bottom: 20px;
+    bottom: 100px;
     border:3px solid #EEE;
 }
 
@@ -128,9 +136,10 @@ iframe:hover{
    width: 560px; 
    height: 315px;
 }
+*/
 
 
-/* HEADER */
+/* - --  HEADER ------ */
 header {
     background-color: darkgrey;
 /*    background-image: url(/hero.jpg);*/
@@ -160,6 +169,10 @@ header {
     height:315px; 
 }
 
+
+
+
+
 /*
 iframe{
     margin: auto;
@@ -167,10 +180,61 @@ iframe{
 }*/
 
 
+
+
+/*-------  "About plant"  --------*/
+
+.aboutplant{
+    background-color: aliceblue;
+    padding: 5% 10% 7%;
+      text-align: justify;
+    
+}
+
+.aboutplant h1{
+    color: #d1d1d1;
+}
+
+
+
+
 /*-------  Our machine  --------*/
 
 .text5{
-    margin: 7% 15% 3% 15%;;
+    margin: 4% 15% 3% 15%;;
     text-align: center;
-    color: #555555;
+   
 }
+
+.text5 h1{
+    color: #555555;
+    margin-bottom: 5%;
+}
+
+
+
+/*---  contacts  ----*/
+.contacts{
+/*   width:100px;*/
+/*  height:100px;  */
+   background-color: red;
+    padding: 2% 10%;
+}
+
+
+
+
+@media(max-width: 600px){
+    .start h1{
+         font-size: 1.5rem; 
+    }
+    
+    .start{
+        
+        padding-top: 30%;
+    }
+    
+}
+
+
+ 
