@@ -17,7 +17,7 @@ nan_bar{
 }
 
 
-/*  --- 2 ---   */
+/*  --- 2 .carousel  ---   */
 
 .section2{
     padding:  7% 15%;
@@ -53,7 +53,9 @@ br{
     width: 80%;
 }
 
-
+.carousel-caption{
+   bottom: 30%; 
+}
 
 
 .carousel-control-next, 
@@ -229,17 +231,75 @@ list-style-type: none;
 
 
 .contant8{
-    
+    padding: 3% 15% 1% 15%;
     background-color: #483125;
+}
+
+.contant8 h1{
+    color: #fff;
+    font-family: monospace;
+}
+
+
+/* --- contant 9 --- */
+
+
+
+.content9{
+    text-align: center;
+    padding: 3% 15% 1% 15%;
+    background-color: #fff;
+}
+
+
+
+/* --- contant 10 --- */
+
+
+
+.content10{
+    text-align: center;
+    padding: 5% 15% 7% 15%;
+    background-image: url(resources/img/homework3/background9.png);
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-color:  rgba(74, 89,98,.7);
+}
+
+ 
+.dm_logo{
+ width: 100%;
 }
 
 
 
 
+/* --- contant 11 --- */
 
 
 
+.content11{
+    text-align: center;
+    padding: 5% 15% 7% 15%;
+  color: #fff;
+    background-color:  #191919;
+}
 
+ 
+
+/* --- contant 12 --- */
+
+
+
+.content12{
+    text-align: center;
+    padding: 5% 15% 7% 15%;
+  color: #fff;
+    background-color:  #111111;
+}
+
+ 
+ 
 
 
 
