@@ -217,8 +217,31 @@ iframe{
 .contacts{
 /*   width:100px;*/
 /*  height:100px;  */
-   background-color: red;
+   background-color: #345082;
     padding: 2% 10%;
+}
+
+ 
+#contacts{
+    text-align: center;
+/*    color: red;*/
+    font-size: 1.5rem; 
+}
+ 
+/*
+#contacts p{
+   
+}
+*/
+
+
+.contacts:hover{
+  color: #fff;
+   
+}
+
+.social_net{
+    height: 20px;
 }
 
 

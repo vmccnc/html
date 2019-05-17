@@ -24,7 +24,37 @@ nan_bar{
 }
 
 
+.feature-box{
+    text-align: center;
+/*    padding: 5%;*/
+}
+
+.feature-box p{
+    font-size: 10px;
+    color: #8c8c8c;
+}
+.feature-box h6{
+    color: #555555;
+}
  
+
+.dm_icon{
+    color: #555555; 
+/*    margin-bottom: 5px;*/
+    margin-bottom: 1rem;
+}
+
+.dm_icon:hover{
+    color: #c7b299; 
+}
+
+br{
+    background-color: red;
+    width: 80%;
+}
+
+
+
 
 .carousel-control-next, 
 .carousel-control-prev{
@@ -178,12 +208,22 @@ color: #8c8c8c;
 /* --- contant7 --- */
 
 .contant7{
+    color: 8c8c8c;
      background-color: #fbfaf8;
       padding: 7% 10% 3% 25%;;
 }
 
+.contant7 h1{
+    color: #555555;
+}
+ul {
+list-style-type: none;
+}
 
-
+.dm_for_li{
+   color: #c7b299;
+    padding-right: 20px;
+}
 
 /* --- contant8 --- */
 
