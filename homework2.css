@@ -260,49 +260,74 @@ text-align: center;
 }
 
 
+/* ----- CHOOSE YOU PRICE -----*/
  
- 
+.chose_yor_price {
+     height: 700px;
+     text-align: center;
+     background-color:#e7edf3;
+     font-family:sans-serif;
+}
+
 .chose_yor_price h1{
 /*  text-align: center; */
    font-family:monospace;
+    color: #394b50;
 } 
 
  
-.chose_yor_price p{
-  text-align: center; 
-     
+.chose_yor_price p{ 
+  text-align: center;  
+    color: #75888d;
 } 
 
-.chose_yor_price {
-/*     border: 3px solid yellow ;*/
-     height: 600px;
-/*    align-content: center;*/
-     text-align: center;
-    background-color:gainsboro;
+.block_price_transform hr{
+    background-color: #e2e9f0;
+    width: 80%;
+}
+
+.block_price_transform h1{
+/*    height: 20px;*/
+    font-size: 3rem;
+    color: #ffbb42;
+    margin-bottom: 0;
+}
+
+.block_for_transform{
+/*    border: 1px solid red;*/
+     height: 450px;
+}
+
+.b_get_started{
+    color: #fff;
+     padding: 10px 20px 10px 20px;
+    background-color: #ffbb42;
 }
 
 .block_price_transform{
-    height: 250px;
-    width: 200px;
-    border: 3px solid blue ;
-/*    float: right;*/
+    height: 400px;
+    width: 300px;
+    border: 1px solid #ccd5df ;
     display: inline-block;
     align-self: center;
-/*    margin: auto;*/
-    padding-top: 50px;
-    
+    margin: auto;
+    padding-top: 30px;
+    background-color:#fff;
 }
 
 
+/*
 .block_price_transform button{
-   padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: #ffbb42;
 }
+*/
 
 .block_price_transform:hover{
-    height: 270px;
-    width: 220px;
-    border: 3px solid green ;
-    background-color: dodgerblue;
+    height: 450px;
+    width: 300px;
+    border: 1px solid #709dca ;
+    background-color: #709dca;
     color: white;
     margin: auto;    
 }
@@ -312,7 +337,33 @@ text-align: center;
     font-family:sans-serif;
 }
 
-.block_price_transform button:hover{
-   padding: 10px 30px 10px 30px;
-    background-color: aqua;
+
+
+/*---- how_it_works  -----*/
+ 
+
+.how_it_works{
+    text-align: center;
+    padding: 2% 3%;
 }
+
+.steps{
+    margin-top: 40px;
+    padding: 20px;
+    display: inline-block;
+    width: 20%;
+/*    border: 1px solid red;*/
+}
+
+
+
+/*----- happy_clients  ----*/
+
+
+.happy_clients{
+    background-color: #ffc155;
+}
+
+
+
+

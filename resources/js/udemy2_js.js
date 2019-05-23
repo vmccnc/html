@@ -3,8 +3,9 @@ var a, b;
 console.log('Hello 3');
 
 //just_test();
-just_test2(22);
+//just_test2(22);
 //just_test2();
+ alert(test3(15));
 
 
 
@@ -32,4 +33,10 @@ function just_test2(nomber){
     var a  = prompt('Enter any word: ');
     
     alert(a + ' ' + nomber);
+}
+
+function test3(nomber){
+   return 5 % 1.5 ;
+    
+ 
 }
