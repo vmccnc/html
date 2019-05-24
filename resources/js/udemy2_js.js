@@ -5,7 +5,8 @@ console.log('Hello 3');
 //just_test();
 //just_test2(22);
 //just_test2();
- alert(test3(15));
+// alert(test3(15));
+ alert(test4( prompt('Enter number: ')));
 
 
 
@@ -36,7 +37,18 @@ function just_test2(nomber){
 }
 
 function test3(nomber){
+    
    return 5 % 1.5 ;
+    
+ 
+}
+
+function test4(nomber){
+    var gg = Math.pow(nomber,1.5);
+     console.log(gg);
+     console.log( Math.round(gg) );
+   return Math.pow(nomber,1.5) ;
+//    simular as nomber^2
     
  
 }

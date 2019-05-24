@@ -14,67 +14,59 @@ body {
  
  
  .navigation{
-	width: 100%; 
-	height: 50px;
+/*	width: 100%; */
+/*	height: 50px;*/
 /*	border: solid 2px green;*/
-     margin: 15px 10% 0 10%;
+     margin: 1%  10%;
  }
  
  .for_logo{ 
 	 width: 10%;
+     float: left;
+     display:  inline-block;
  }
   
  .for_contacts{
-/*	 float: left;*/
-     float: right;
-     text-align: center;
-	 width: 90%;
+     width: 90%;
+     text-align: right;
+     display:  inline-block;
  }
-/*
  
- .bmw_{
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
- }
-*/
  
- .nav{
-	 height:20px;
-	 float:left;
-	 margin:  10px 7px auto ;
-     padding: 5px;
+.navigation p{
+ 
+     text-transform: uppercase;
+/*	 height:15px;*/
+    font-family:verdana;
+    font-size: 12px;
+    color: #868686;
+     padding: 5px 15px;
+    display: inline-block;
 /*	 border: solid 2px green;*/
  }
- .nav:hover {
+.navigation p:hover {
 	 background-color: #ffbb42;
-/*     color: pink;*/
+     color: #fff;
 
  }
  
  
-.big_letters{
-/*	 border: solid 2px green;*/
-}
-
  .big_letters {
 	 color:yellow;
 	 font-family:verdana;
 	 font-size:160%;
 	 text-align:center;
+      margin: 0;
  }
-/*
-  .little_letters{
-	 height: 60px; 
-  }
-*/
-  
+ 
   .little_letters{
 /*      height: 60px; */
 	 color:white;
 	 font-family:verdana;
 	 font-size:70%;
 	 text-align:center;
+      margin-top: 0 ;
+      margin-bottom: 30px ;
  }
   
   
@@ -98,50 +90,43 @@ body {
 /*	 background-color: #ff00ff;*/
  }
  
-.input1{
-    margin: 3px;
-    padding: 5px 5px 5px 30px;
-    background-image: url("resources/img/homework4/glass_yellow.png");  
+.input_name{
+ 
+    margin-right: 3px;
+    padding: 10px 10px 10px 35px;
+    background-image: url("resources/img/homework2/human.png");  
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    background-position: 2px 2px;
+    background-position: 5px 8px;
 }
 
-.input2{
-    margin: 3px;
-    padding: 5px 5px 5px 20px;
+.input_email{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px 10px 10px 35px;
+    background-image: url("resources/img/homework2/mail.png");  
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 8px;
 }
 
-.input3{
-    margin: 3px;
-    padding: 5px 5px 5px 20px;
+.input_phone{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px 10px 10px 35px;
+    background-image: url("resources/img/homework2/phone-outline.png");  
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 6px 7px;
 }
+
 .button_request{
-    margin: 3px;
-    padding: 5px;
+    margin-left: 3px;
+    padding: 10px 20px;
     background-color: #ffbb42;
+    color: #fff;
 }
 
-
-/*
- .a2{
-       display: inline;
-	 float: left;
-	 margin-right: 10px ;
-	  margin-left: 10px ;
- }
-*/
- 
- .a2_img{
-/*	float: left; */
- }
-/*
- .a4{
-     display: inline;
-	margin-right: 10px ;
-	margin-left: 10px ; 
- }
-*/
  
  .tv{
 	 margin-left:auto;
@@ -151,96 +136,110 @@ body {
 	 /* background-color: green;*/
  }
  
-   .tv1{
-     height: 100px;
-/*    border: 3px solid green ;*/
- }
- 
-  .tv2{
-/*     height: 1600px;*/
-margin:0 10% 0;
- }
 
-.tv2_service {
-    width: 400px;
-    height: 50px;
-    margin: auto;
+/*----   OUR SERVICE    -------*/
  
-}
-.tv2_service_one {
-    width: 400px;
-/*    height: 50px;*/
-    margin: auto;
-/*    border: 3px solid blue ;*/
+.our_service h2,
+.our_service p{
+   color: #394b50;     
 }
 
-.tv2_service_one h2 {
-text-align: center;
+.block_left_head h3{
+   color: #394b50; 
+   text-transform: uppercase;
+} 
 
+.block_left_head p{
+   color: #919191; 
+}
+
+
+
+.our_service{
+    margin:80px 10%;
+    text-align: center;
+   
+ }
+
+.our_service_left{
+    width: 50%;
+    display: inline-block;
+/*     font-family:verdana;*/
+}
+
+.our_service_right{        
+    width: 49%;
+    display: inline-block;
+      
+}
+
+ 
+.blockonefromtree{
+/*    padding: 5%;*/
+}
+
+.block_left_photo{
+    width: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+ 
+.block_left_head{
+    width: 79%;
+    text-align: left;
+    padding: 5%;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .tv2_service_text{
     text-align: center;
 }
 
-.block{
-/*    border: 3px solid red ;*/
-}
-
-.block_left{
-    width: 49%;
-    height: 400px;
-/*    border: 3px solid blue ;*/
-    float: right;
-  
+ 
+.fa-4x{
+    color: #709dca;
 }
 
 
 
 
-.block_right{        
-      width: 49%;
-    height: 400px;
-/*    border: 3px solid yellow ;*/
-      
+.img_service{
+    width: 100%;
 }
 
-.block_left_photo{
-    width: 50px;
-    height: 100px;
-    float:left;
-/*        border: 3px solid blue ;*/
-    background-image: url(http://pngimg.com/uploads/bmw/bmw_PNG1712.png);
-     background-repeat: no-repeat;
-     background-size: contain;
-}
 
+
+/*  ---- ABOUT US ----  */
 
 .about_us{
-/*   height: 500px;*/
+/*   border: 1px solid red; */
 }
 
 .about_us_left{
+/*     border: 1px solid blue;*/
     width: 50%;
-    height: 500px;
-    padding: 50px 10% 10px 50px ;
-/*    border: 1px solid blue ;*/
+    
+/*      padding: 5%;*/
+/*    background-color: #ffc155;*/
+/*    box-sizing: border-box;*/
+    
+     display: inline-block;
+}
+    
+.about_us_right{
+color: #fff;
     float: right;
+    padding: 5%;
+    width: 50%;
     background-color: #ffc155;
+    text-align: left;
     box-sizing: border-box;
+    display: inline-block;
 }
 
-.about_us_right{
-    text-align: right;
-     width: 50%;
-     height: 500px;
-/*     border: 1px solid green ;*/
-/*    padding: a*/
-	 background-image: url("resources/img/homework2/about_us.png");
-	 background-repeat: no-repeat;
-     background-size: contain;
-     background-position: center center;
- 
+.img_about_us{
+    width: 100%;
 }
 
 .about_us_left h1{
@@ -257,6 +256,8 @@ text-align: center;
 /*    margin: 5px;*/
     background-color: #ffc155;
     color: #fff;
+    border-color: #e7ad48;
+
 }
 
 
