@@ -139,14 +139,26 @@ body {
 
 /*----   OUR SERVICE    -------*/
  
-.our_service h2,
+.our_service{
+    margin:100px 10%;
+    text-align: center;
+   
+ }
+
+.our_service h2{
+   color: #394b50; 
+    margin: 0;
+}
+
 .our_service p{
-   color: #394b50;     
+   color: #4e5d61; 
+    margin:0;
 }
 
 .block_left_head h3{
    color: #394b50; 
    text-transform: uppercase;
+    margin-top: 0;
 } 
 
 .block_left_head p{
@@ -155,16 +167,13 @@ body {
 
 
 
-.our_service{
-    margin:80px 10%;
-    text-align: center;
-   
- }
+
 
 .our_service_left{
     width: 50%;
     display: inline-block;
 /*     font-family:verdana;*/
+    float: left;
 }
 
 .our_service_right{        
@@ -180,12 +189,14 @@ body {
 
 .block_left_photo{
     width: 20%;
+     padding-top: 5%;
     display: inline-block;
     box-sizing: border-box;
+    float: left;
 }
  
 .block_left_head{
-    width: 79%;
+    width: 80%;
     text-align: left;
     padding: 5%;
     display: inline-block;
@@ -197,7 +208,7 @@ body {
 }
 
  
-.fa-4x{
+.fa-3x{
     color: #709dca;
 }
 
@@ -342,20 +353,30 @@ color: #fff;
 
 /*---- how_it_works  -----*/
  
+ 
 
 .how_it_works{
     text-align: center;
-    padding: 2% 3%;
+    padding: 2% 10%; 
+    font-family:verdana;
+}
+
+.how_it_works h1{
+    text-transform: uppercase;
 }
 
 .steps{
     margin-top: 40px;
     padding: 20px;
-    display: inline-block;
     width: 20%;
-/*    border: 1px solid red;*/
+    display: inline-block;
 }
 
+.steps h2{
+/*       display: inline-block;*/
+       text-transform: uppercase;
+    color: #394b50;
+}
 
 
 /*----- happy_clients  ----*/

@@ -11,28 +11,27 @@
     <!--    bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       
-    <!--   favicon-elinext   -->
-    <link href="elinext/favicon-elinext.ico" rel="icon">
+    <!--   favicon-akor   -->
+    <link href="akor/favicon-akor.ico" rel="icon">
  
-    <link rel="stylesheet" href="elinext/elinext.css" >
-    <title>EliNext</title>
+    <link rel="stylesheet" href="akor/akor.css" >
+    <title>akor</title>
 
   </head>
     
   <body>
    
       
-     <div class="elinext">
+     <div class="akor">
       
-         <div class="elinext_left">
-<!--           <h3 class="elinext_text">ELI<span class="color_red">N</span>EXT <span class="color_pts">PTS</span></h3>-->
-           <h3 class="elinext_text"><span class="color_red">A</span>kor<span class="color_red"> D</span>irect <span class="color_pts">Admin</span></h3>
+         <div class="akor_left">
+<!--           <h3 class="akor_text">ELI<span class="color_red">N</span>EXT <span class="color_pts">PTS</span></h3>-->
+           <h3 class="akor_text"><span class="color_red">A</span>kor<span class="color_red"> D</span>irect <span class="color_pts">Admin</span></h3>
 
              <input type="text" class="searchId" placeholder="Search ID">
              
 <nav class="nav flex-column">
-  <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt left10">
-      </i> DASHBOARD</a>
+  <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt left10"> </i> DASHBOARD</a>
   <a class="nav-link" href="#">
 <!--      <i class="fas fa-clipboard-list left15"></i>  -->
       <i class="fas fa-layer-group left10"></i>
@@ -40,20 +39,23 @@
   <a class="nav-link" href="#"><i class="far fa-clock left10"></i> TIME REPORTS</a>
   <a class="nav-link" href="#"><i class="far fa-user left10"></i> GROUPS</a>
   <a class="nav-link" href="#"><i class="fas fa-cog left10"></i> SETINGS</a>
-  <a class="nav-link disabled" href="#"> <i class="fas fa-trash left20"></i>Disabled</a>
+  <a class="nav-link" href="#"> 
+<!--  <a class="nav-link disabled" href="#"> -->
+      <i class="fas fa-trash left10">
+      </i> Basket</a>
 </nav>
              
-          </div> 
+          </div>    
          
          
          
-   <div class="elinext_right">  
+   <div class="akor_right">  
          
        <div class="row">
        
            <div class="col-sm-6" >
                
-               <h3>PROJECTS</h3>
+               <h3>Machines</h3>
                
 <!--
                 <div class="form-check">
@@ -63,15 +65,17 @@
 -->
 
                <!-- Default unchecked -->
+<!--
 <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-    <label class="custom-control-label" for="defaultUnchecked">Show subproject</label>
+    <label class="custom-control-label" for="defaultUnchecked">---</label>
 </div>
+-->
                
            </div>
            
            <div class="col-sm-6" >
-               <button type="button" class="botton_create_project">CREATE PROJECT</button>
+               <button type="button" class="botton_create_project">Add Machine</button>
            </div>
  
        </div>
@@ -79,7 +83,7 @@
        
       <div class="row gg">
           
-         <div class="d0 border_right">
+         <div class="d0 border_right">  
          
            
     <input type="checkbox" class="check_1" >
@@ -90,7 +94,7 @@
         
           
      <div class="d1 border_right">
-         <p class="no_margin_bottom">Name</p>
+         <p class="no_margin_bottom">Model</p>
 <!--
          <select class="for_select_d1">
             <option selected>Name</option>
@@ -102,19 +106,19 @@
      </div>
           
     <div class="d2_code border_right">
-        <p class="no_margin_bottom">Code</p>
+        <p class="no_margin_bottom">Brand</p>
                <input type="text" class="for_d2" >
      </div>     
 
           
     <div class="d3 border_right">
-         <p class="no_margin_bottom">Lead</p>
+         <p class="no_margin_bottom">Diller</p>
 <!--               <input type="text" class="for_d2" placeholder="Name">-->
         
          <select class="for_select_d3">
-            <option selected>Jane Osborn</option>
-            <option>Jane Osborn 2 </option>
-            <option>Jane Osborn 3</option>
+            <option selected>Dmitry</option>
+            <option>Anatoly </option>
+            <option>Andrey</option>
         </select>
 
      </div>   
@@ -126,9 +130,9 @@
        <div class="row strings">
        
            <div class="d0 color_transparent"> <input type="checkbox" class="check_s1" ></div>
-           <div class="d1 color_transparent">Integration Zensum</div>
-           <div class="d2_code color_transparent">P001</div>
-           <div class="d3 color_transparent">Jane Osborn</div>
+           <div class="d1 color_transparent">CTX 310 V1</div>
+           <div class="d2_code color_transparent">HY58</div>
+           <div class="d3 color_transparent">Andrey</div>
        
        </div>
        
@@ -139,9 +143,9 @@
                <input type="checkbox" class="check_s1" >
            </div>
            
-           <div class="d1 color_transparent">  Integration Apocalypse </div>
-            <div class="d2_code color_transparent">P002</div>
-           <div class="d3 color_transparent">Jane Osborn 2</div>
+           <div class="d1 color_transparent">CTX 420 V3 </div>
+            <div class="d2_code color_transparent">NM56</div>
+           <div class="d3 color_transparent">Anatoly</div>
        
        </div>
        
@@ -155,7 +159,7 @@
       
       
 
-<!--      <script src="elinext/elinext_js.js"> </script>-->
+<!--      <script src="akor/akor_js.js"> </script>-->
       
       <!--   js for  bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
