@@ -90,27 +90,46 @@
 // console.log(12.654645.toFixed(3));
 
 /// ----  ------  parseInt and  parseFloat -------   ----    
-var myInt = parseInt('1280px');
-var myFloat = parseFloat('1280px');
+// var myInt = parseInt('1280px');
+// var myFloat = parseFloat('1280px');
 
-console.log(myInt);
-console.log(myFloat);
+// console.log(myInt);
+// console.log(myFloat);
 
 
 /// ----  ------  Math.ceil  Math.floor Math.round-------   ----   -------   -----------
 
-console.log(Math.ceil(1.3));
-console.log(Math.ceil(1.6)); // Округляет в большую сторону
+// console.log(Math.ceil(1.3));
+// console.log(Math.ceil(1.6)); // Округляет в большую сторону
 
-console.log(Math.floor(1.6));
+// console.log(Math.floor(1.6));
 
-console.log(Math.round(1.6));
-console.log(Math.round(1.3));
+// console.log(Math.round(1.6));
+// console.log(Math.round(1.3));
 
 // -------------            --------------------
 
-var arr = ['Apple', 'Orange', 'Mango', 'Kivi'];
+// var arr = ['Apple', 'Orange', 'Mango', 'Kivi'];
 
-arr.forEach(function(item, i, arr){
-    console.log(i +' ' + item + ' massiv '+ arr );
+// arr.forEach(function(item, i, arr){
+//     console.log(i +' ' + item + ' massiv '+ arr );
+// });
+
+// var text = 'Hello world';
+// console.log(text.indexOf('lo'));
+// console.log(text.indexOf('rrrr'));
+
+
+
+var arr2 = ['Apple2', 'Orange3', 'Mango2', 'Kivi3'];
+
+var fruits = arr2.filter(function(item) {
+   return item.indexOf('3')>-1; 
 });
+console.log(fruits);
+
+var fruits = arr2.map(function(item) {
+    return item.length; 
+ });
+ console.log(fruits);
+ 
