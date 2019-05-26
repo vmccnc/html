@@ -1,12 +1,18 @@
-console.log('Hello 3');
 
-var $age=14;
-alert($age);
-console.log($age);
+//---- lesson  ----
 
-var firstName = 'Vasia';
-alert(firstName);
-console.log(firstName);
+//console.log('Hello 3');
+//
+//var $age=14;
+//alert($age);
+//console.log($age);
+//
+//var firstName = 'Vasia';
+//alert(firstName);
+//console.log(firstName);
+
+
+//---- lesson  ----
 
 // var bool = true; /* false */
 // alert(true);
@@ -28,11 +34,33 @@ console.log(firstName);
 // document.querySelector('p').innerText='Hello new'
 
 
-var a  = +prompt('Enter A');
-var b  = +prompt('Enter B');
-console.log(typeof a);
-var c  = +prompt('Enter C');
-var text  = prompt('Enter Text');
-console.log(typeof text);
-var d = b*b - 4*a*c;
-alert('D = b*b - 4*a*c = ' + b +'*'+b+'+4*'+a+'*'+c+ ' = '+ d);
+//---- lesson  -----
+
+//var a  = +prompt('Enter A');
+//var b  = +prompt('Enter B');
+//console.log(typeof a);
+//var c  = +prompt('Enter C');
+//var text  = prompt('Enter Text');
+//console.log(typeof text);
+//var d = b*b - 4*a*c;
+//alert('D = b*b - 4*a*c = ' + b +'*'+b+'+4*'+a+'*'+c+ ' = '+ d);
+
+
+
+//---- lesson 119 random -----
+
+while(true){
+    alert(Math.random())
+}
+
+//var n= Math.random();
+
+
+
+
+
+
+
+
+
+
