@@ -75,10 +75,16 @@ iframe{
 
 
 img{
-/*    width: 100%;*/
+    width: 100%;
 }
 
 
+/*
+.card-deck .card{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+*/
 
 
 /*----  @media  -----*/
