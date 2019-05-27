@@ -2,7 +2,76 @@
     margin: 0;
 }
 
+.h4green{
+    color: #0eb493;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.h4white{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+ 
+
+
+/* ---------- startsection --------*/
+
+.startsection{
+    padding: 2% 10% 0;
+    background-image: url("resources/img/diplomaNadia/background_contact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.navbar-brand{
+    color: #1ab798;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dm_for_li {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.img_mobile{
+    position: relative;
+    width: 300px;
+    bottom: -50px;
+}
+
+.btn_download{
+    background-color: #17d0ac;
+}
+
+/* ---------- keyfeatures --------*/
+
+.keyfeatures{
+    padding: 5% 10%;
+/*    background-color: #31d4e7;*/
+}
+
+
+
+
+
+
+
+
+
+/* ---------- whatchvideo --------*/
+    
+    
+    
 .whatchvideo{
     padding: 5% 10%;
     background-color: #31d4e7;
@@ -60,14 +129,16 @@ iframe{
 /*----  ourteam  -----*/
     
 .ourteam {
-     padding: 5% 10%;
+     padding: 5% 10% 0;
     text-align: center;
 }
 
+/*
 .ourteam h4{  
     color: #0eb493;
     text-transform: uppercase;
 }
+*/
 
 .ourteam p{  
     padding: 0 13%;
@@ -85,6 +156,92 @@ img{
     margin-left: 5px;
 }
 */
+
+
+
+/*----------   what our customet say ------------*/
+
+.whatourcustometsay{
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.imgcustomer{
+    height: 80px;
+    width: 80px;
+}
+
+.carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+background-color: #d4d3d4;
+    color: red;
+}
+
+/*
+.carousel-indicators {
+    background-color: #d4d3d4;
+}
+*/
+
+.carousel-indicators .active{
+    background-color: #1ab798;
+}
+
+
+/*----------   contact us ------------*/
+
+
+
+.contactus{
+    padding: 5% 10%;
+    color: #fff;
+    background-image: url(resources/img/diplomaNadia/background_contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_submit{
+    background-color: #31d4e7;
+    
+    
+}
+
+.form-group2{
+   text-align: right;
+}
+
+.circlebackground{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+    padding-top: 7px;
+    display: inline-block;
+}
+
+
+
+.dm_facebook{
+       background-color: #3b5997; 
+}
+
+.dm_twiter{
+    background-color: #3ec2f3; 
+}
+.dm_google{
+    background-color: #e44c41; 
+}
+
+.ourphone{
+    margin-top: 20px;
+    margin-bottom: 0px;
+} 
+
+.circlebackground:hover{
+    background-color: #222222;
+}
 
 
 /*----  @media  -----*/
