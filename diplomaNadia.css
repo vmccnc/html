@@ -61,9 +61,20 @@ ul {
 }
 
 
+.tt{
+    height: 30%;
+    margin: auto;
+}
 
+.tt10{
+      height: 10%; 
+}
+/*
 
-
+.tt2{
+    
+}
+*/
 
 
 
@@ -175,7 +186,7 @@ img{
     height: 10px;
     width: 10px;
     border-radius: 100%;
-background-color: #d4d3d4;
+    background-color: #d4d3d4;
     color: red;
 }
 
@@ -248,8 +259,6 @@ background-color: #d4d3d4;
 
 @media(max-width: 1024px){
     
-
-
     iframe{
         width: 320px;
         height: 180px;    
@@ -260,15 +269,29 @@ background-color: #d4d3d4;
     }   
 }
 
+
 @media(max-width: 768px){
     
     .circle{
       margin-bottom: 40px;
     }
     
-        .video1{
+    .video1{
        text-align: center;
     }
+    
+  .startsection{
+      background-image: 
+    }
+    
+    .tt{
+        text-align: center;
+    }
+    
+    .mobileWithNadia{
+        width: 200px;
+    }
+    
 }
 
 
