@@ -19,6 +19,13 @@
  
 
 
+/* ---------- nav bar --------*/
+
+.navbar .navbar-brand {
+    color: #0eb493;
+}
+
+
 /* ---------- startsection --------*/
 
 .startsection{
@@ -69,15 +76,18 @@ ul {
 .tt10{
       height: 10%; 
 }
-/*
 
-.tt2{
-    
+.mobileWithNadia{
+/*    width: 300px;*/
+    display: inline-block;
+    }
+
+.dm_colmidle{
+    text-align: center;
+    vertical-align: bottom; 
 }
-*/
 
-
-
+ 
 
 /* ---------- whatchvideo --------*/
     

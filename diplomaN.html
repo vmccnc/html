@@ -27,7 +27,7 @@
  
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       
-       <a class="navbar-brand text-success" href="">Mobileapp</a>
+       <a class="navbar-brand" href="">MobileApp</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,17 +40,17 @@
                   <a class="nav-link" href="#"> HOME </a>
                </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="#"> FEATURES</a>
+                  <a class="nav-link" href="#keyfeatures"> FEATURES</a>
                </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="#">TEAM</a>
+                  <a class="nav-link" href="#ourteam">TEAM</a>
                </li> 
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">TESTIMONIALS</a>
+                  <a class="nav-link" href="#whatourcustometsay">TESTIMONIALS</a>
                </li> 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="#contact">CONTACT</a>
                </li> 
 
            </ul> 
@@ -76,7 +76,7 @@
                 <li><i class="fas fa-chevron-right dm_for_li"></i>Eodem modo typi, qui nunc nobis videntur  </li>   
                 <li>
                     <i class="fas fa-chevron-right dm_for_li"></i>Investigationes demonstraverunt  
-                   </li>
+                </li>
               </ul> 
                 
                   <br/>
@@ -105,7 +105,7 @@
       
       <div class="keyfeatures">
       
-          <h4 class="h4green">key features</h4>
+          <h4 id="keyfeatures" class="h4green">key features</h4>
           <br/>
           <br/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
@@ -123,16 +123,17 @@
                     </div>     
                     
                     <div class="col-md-10 col-sm-12">
-                        <h5>Lorem ipsum dolor </h5>
+                        <h5>Switzerland </h5>
+                        <button type="button" class="btn btn-light" onclick="document.getElementById('modWithNadia').src='resources/img/diplomaNadia/mobileWithNadia1.png.'">pic #1 - Switzerland</button>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitonsectetur adipiscing elit.</p>
+                               
                     </div>
-                    
+  
+                 
                 </div>
                 
                <div class="row tt">
-                   
-            
-                   
+
                     <div class="col-md-2 col-sm-12">
                       <i class="fab fa-apple fa-2x text-success"></i>
                     </div>     
@@ -160,8 +161,8 @@
                 
             </div>
                
-            <div class="col-md-4 col-sm-12  video1">
-                <img class="mobileWithNadia" src="resources/img/diplomaNadia/mobileWithNadia.png">
+            <div class="col-md-4 col-sm-12 dm_colmidle">
+                <img id="modWithNadia" class="mobileWithNadia" src="resources/img/diplomaNadia/mobileWithNadia.png">
             </div> 
                
                
@@ -176,7 +177,8 @@
                     </div>     
                     
                     <div class="col-md-10 col-sm-12">
-                        <h5>Lorem ipsum dolor </h5>
+                        <h5>Karting (Minsk) </h5>
+                          <button type="button" class="btn btn-light" onclick="document.getElementById('modWithNadia').src='resources/img/diplomaNadia/mobileWithNadia.png.'">pic #2 - Karting</button>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitonsectetur adipiscing elit.</p>
                     </div>
                     
@@ -259,7 +261,7 @@
       
    
       <!--      ------------  our team --------------      -->
-      <div class="ourteam">
+      <div id="ourteam" class="ourteam">
           
           <h4 class="h4green">our team</h4>
           <p>
@@ -311,16 +313,17 @@
  <!--      ------------  what our customet say --------------      -->
     
 
-      <div class="whatourcustometsay">
+      <div id="whatourcustometsay" class="whatourcustometsay">
       
       <h4 class="h4green">what our customet say</h4>
+ <br/>
+      
+      
+<div id="carouselExampleControls" class="carousel slide"   data-ride="carousel" data-interval="3000" >
  
-      
-      
-<div id="carouselExampleControls" class="carousel"  data-ride="carousel" data-interval="3000">
  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
 <!--    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
   </ol>
     
@@ -332,8 +335,9 @@
            <h5 class="card-title">Nadin Yrkevich</h5>
            <p class="card-text">Lead JS Desiner</p>
         <br/>
-        <br/>
+    
       <h2>I spent to learn HTML, CSS, bootstrap, and now I have my own company.</h2>
+        <br/>
         <br/>
     </div>
       
@@ -342,14 +346,24 @@
            <h5 class="card-title">Nadia</h5>
            <p class="card-text">JavaScript Developer</p>
         <br/>
-        <br/>
+ 
       <h2>I am very proud I am JavaScript developer.</h2>
+          <br/>
           <br/>
     </div>
  
   </div>
      
- 
+<!--
+     <a class="carousel-control-prev bg-light" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next bg-light" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+-->
      
 </div>
       
@@ -360,7 +374,7 @@
       
  <!--      ------------  contact us --------------      -->
       
-   <div class="contactus bg-secondary">
+   <div id="contact" class="contactus bg-secondary">
       
       <h4 class="h4white">contact us</h4>
          
@@ -391,33 +405,36 @@
             
    
             
-  <div class="col-md-6 col-sm-12">
-    
-        <form>
+            <div class="col-md-6 col-sm-12">
 
-            <div class="form-row"> 
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name">
-                </div>
+                <form>
 
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>   
+                    <div class="form-row"> 
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>   
+                    </div>
+
+                  <div class="form-group">
+                      <textarea  type="text" rows="5" class="form-control" id="inputAddress" placeholder="Message"></textarea>
+                  </div>
+
+                <div class="form-group2">
+                  <button type="submit" class="btn text-white px-3 btn_submit">SUBMIT</button>
+                </div>        
+                </form>
+
             </div>
 
-          <div class="form-group">
-              <textarea  type="text" rows="5" class="form-control" id="inputAddress" placeholder="Message"></textarea>
-          </div>
-
-        <div class="form-group2">
-          <button type="submit" class="btn text-white px-3 btn_submit">SUBMIT</button>
-        </div>        
-        </form>
-            
-  </div>
-       
+        </div>
        
    </div>
+      
+ 
       
       
       <!--   js for  bootstrap-->

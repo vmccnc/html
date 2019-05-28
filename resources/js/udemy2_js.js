@@ -1,14 +1,32 @@
-var a, b;
+ 
+//document.querySelector("h1").innerHTML = "Good bye!";
 
-console.log('Hello 3');
+ 
 
 //just_test();
 //just_test2(22);
 //just_test2();
 // alert(test3(15));
- alert(test4( prompt('Enter number: ')));
+// alert(test4( prompt('Enter number: ')));
 
 
+//var guestList = ['Dmitry', 'Andrey', 'Nadia', 'Vika'];
+//
+//var name = prompt('Enter a name:');  
+//
+//if(guestList.includes(name)){
+//    alert('Yes, you are invited!')
+//}else{
+//    alert('No, you are not in guest list.')
+//}
+
+
+
+var el = document.firstElementChild.lastElementChild.firstElementChild.firstElementChild
+
+el.style.color = 'red';
+el.innerText = 'Hello , I chnaged word HELLO!';
+el.style.color = 'red';
 
 
 function just_test(){
