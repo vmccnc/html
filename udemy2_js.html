@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<!--
 <head>
-<link rel="stylesheet" href="resources/css/lesson3.css">
-<title> My first html</title>
-    
+    <title> My first html</title>
+    <link rel="stylesheet" href="udemy2_js.css" >
 </head>
--->
 
 
 <!--<body onload="alert('Hello')">-->
@@ -14,22 +11,75 @@
 
 <div class="st" >
   
-    <h1>Hello</h1>
-    <p> Udemy JS  </p>
- 
+    <h1>Hello (it is tag 'h1')</h1>
+    <h2>Hello (it is tag 'h2')</h2>
+    <a href="https://www.tut.by"> Go to tut.by  </a>
+    <button class="btn" >Click Me</button>
  
 </div>
 
  
 
     <ul class="list">
-    <li class="tt"> hhh1</li>
-    <li class="tt"> hhh2</li>
-    <li class="tt"> hhh3</li>
- 
+        <li class="tt"> Google</li>
+        <li class="tt2"> Tut</li>
+        <li class="tt3"> Yahoo</li>
+    </ul>
+    
+    
+    <ul class="list">
+        <li class="tt"> id="idgoogle" > Google id</li>
+        <li  ><a href="https://www.tut.by" >tut</a> Tut</li>
+        <li  > Yahoo</li>
     </ul>
  
- 
+    
+<p >--------  Lesson 121  ---------</p> 
+    document.getElementsByTagName("li");<br/>
+    document.getElementsByTagName("li").length;<br/>
+    document.getElementsByTagName("li")[1].style.color = 'green';<br/>
+    document.getElementsByTagName("li")[2].classList.add('colorRedAndFontSize20px');<br/>
+    document.getElementsByClassName("btn"); (return Array) <br/>
+    document.getElementById("idgoogle"); <br/>
+    document.querySelector(".list .tt"); <br/>
+    document.querySelector("ul a"); <br/>
+    document.querySelector("li.tt"); <br/>
+    document.querySelector(".list tt"); <br/>
+    document.querySelectorAll(".list tt"); <br/>
+ <br/>
+    
+    <p >--------  Lesson 122  ---------</p>
+    
+ <p >--------  Lesson 123  ---------</p>
+  
+ var el = document.firstElementChild.lastElementChild.firstElementChild.firstElementChild;<br/>
+    or   <br/>
+    var el =  document.querySelector("h1"); <br/>
+     <br/>
+ el.style.color = 'red';<br/>
+ el.innerText = 'Hello , I chnaged word HELLO!';<br/>
+ el.style.color = 'green';<br/>
+<br/>
+   
+    document.querySelector("button").classList; <br/>    document.querySelector("button").classList.add("invisable"); <br/>
+    document.querySelector("button").classList; <br/>    document.querySelector("button").classList.remove("invisable"); <br/>
+    document.querySelector("button").classList; <br/>    document.querySelector("button").classList.toggle("invisable"); <br/>
+    
+ --------  Lesson 124  ---------<br/>
+    <br/>
+ document.querySelector("h1").innerHTML = '<em>Start</em>';<br/>
+document.querySelector("h1").textContent = '<em>Start</em>';<br/>  
+    
+ <br/>
+    
+ --------  Lesson 125  ---------  <br/> 
+    
+ 1)document.querySelector('a').attributes;<br/>
+<br/>
+2) document.querySelector('a').getAttribute('href');<br/>
+ document.querySelector('a').setAttribute('href', 'http://dmitrypro.beget.tech/diplomaN.html');  <br/>
+    
+    
 
 <!--
 <p id="yy">Just Word</p>

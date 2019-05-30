@@ -21,12 +21,38 @@
 //}
 
 
+document.getElementsByTagName("li")[2].classList.add('colorRedAndFontSize20px');
+document.getElementsByClassName("btn");
+document.getElementById("idgoogle");
+document.querySelector("ul a");
+//--------  Lesson 123  ---------
+//
+//var el = document.firstElementChild.lastElementChild.firstElementChild.firstElementChild
+//el.style.color = 'red';
+//el.innerText = 'Hello , I chnaged word HELLO!';
+//el.style.color = 'red';
 
-var el = document.firstElementChild.lastElementChild.firstElementChild.firstElementChild
 
-el.style.color = 'red';
-el.innerText = 'Hello , I chnaged word HELLO!';
-el.style.color = 'red';
+
+//--------  Lesson 124  ---------
+//1)
+//document.querySelector("h1").innerHTML = '<em>Start</em>'
+
+//2)
+// document.querySelector("h1").textContent = '<em>Start</em>'
+
+// --------  Lesson 125  ---------
+//1)
+//document.querySelector('a').attributes;
+
+//2)
+//document.querySelector('a').getAttribute('href');
+//document.querySelector('a').setAttribute('href', 'http://dmitrypro.beget.tech/diplomaN.html');
+
+
+ 
+
+
 
 
 function just_test(){
@@ -55,10 +81,7 @@ function just_test2(nomber){
 }
 
 function test3(nomber){
-    
    return 5 % 1.5 ;
-    
- 
 }
 
 function test4(nomber){
@@ -66,7 +89,12 @@ function test4(nomber){
      console.log(gg);
      console.log( Math.round(gg) );
    return Math.pow(nomber,1.5) ;
-//    simular as nomber^2
-    
- 
+//   simular as nomber^2
 }
+
+
+
+
+
+
+

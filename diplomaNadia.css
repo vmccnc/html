@@ -16,9 +16,11 @@
 }
 
 
-
- 
-
+/* for testin js */
+.marg{ 
+    margin: 20px;
+}
+  
 
 /* ---------- nav bar --------*/
 
@@ -47,12 +49,12 @@
     color: #1ab798;
 }
 
-ul {
+ul{
     list-style-type: none;
     padding: 0;
 }
 
-.dm_for_li {
+.dm_for_li{
     color: #fff;
     padding-right: 10px;
 }
@@ -73,7 +75,8 @@ ul {
     background-color: #babdc1;
     
 }
-    .line{
+
+.line{
     width: 60px;
     margin-bottom: -8px;
 }
@@ -112,10 +115,7 @@ ul {
 /*    vertical-align: middle; */
 }
 
-
-
  
-
 /* ---------- whatchvideo --------*/
     
     
