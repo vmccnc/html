@@ -22,15 +22,15 @@
 
 /* ---------- nav bar --------*/
 
-/*
-.dm_navbar{
-    padding: 0 10%;
-}
-*/
-
 .navbar .navbar-brand {
     color: #0eb493;
-     padding: 0 10%;
+}
+
+.dm_navbar{
+    padding: 0 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 
@@ -174,9 +174,9 @@ iframe{
 
 
 
-/*----  ourteam  -----*/
+/*----  women  -----*/
     
-.ourteam {
+.women {
      padding: 5% 10% 0;
     text-align: center;
 }
@@ -188,7 +188,7 @@ iframe{
 }
 */
 
-.ourteam p{  
+.women p{  
     padding: 0 13% 10%;
 }
 
