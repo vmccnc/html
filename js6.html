@@ -1,0 +1,93 @@
+<head>
+<link rel="stylesheet" href="js6.css">
+<title> My first html</title>
+</head>
+
+
+<body>
+
+<div class="st" >hhhhhh</div>
+<div id="mm" >mmmm</div>
+<p> Hello !   </p>
+
+
+<a href="google.com" onclick="return false"> Go to Google</a>
+  
+<a href="google.com" onclick="console.log(event);return false"> Go to Google</a>
+
+<a href="google.com" onclick="console.log(event);event.preventDefault()"> Go to Google</a>
+ 
+<p>return false the same event.preventDefault()</p>
+  <br/>
+<a href="google.com" onclick="handller()"> Go to Google Han</a>
+ 
+<br/>
+<br/>
+<p>clientX</p>
+<p>clientY</p>
+<button onclick="alert(event.clientX + ' ' + event.clientY)">button</button>
+ 
+<input type="text" onmousemove="this.value=event.clientX + ' : ' + event.clientY">
+
+<form name="form11">
+
+</form>
+
+
+<form onsubmit="alert('submit');return false;" name="form2"  action="/go">
+  <input type="text" name="inpput33" onmousemove="this.value=event.clientX + ' : ' + event.clientY">
+  <input name="mycheck" type="checkbox" >
+
+  <select name="myselect">
+    <option>Пункт 1</option>
+    <option>Пункт 2</option>
+    <option>Пункт 3</option>
+    <option>Пункт 4</option>
+  </select>
+
+  <button type="submit" onclick="alert('cliked')" >button</button>
+
+</form>
+
+
+<img id="big-img" src="resources/img/homework3/a1.jpg">
+<div class="thumbnails">
+ 
+  <a href="resources/img/homework3/a1.jpg"> 
+    <img src="resources/img/homework3/a1.jpg"> 
+  </a>
+
+  <a href="resources/img/homework3/a2.jpg"> 
+      <img src="resources/img/homework3/a2.jpg"> 
+  </a>
+
+    <a href="resources/img/homework3/a3.jpg"> 
+        <img src="resources/img/homework3/a3.jpg"> 
+    </a>
+
+    <a href="resources/img/homework3/a4.jpg"> 
+       <img src="resources/img/homework3/a4.jpg"> 
+    </a>
+
+   <a href="resources/img/homework3/a5.jpg"> 
+      <img src="resources/img/homework3/a5.jpg"> 
+   </a>
+</div>
+
+ 
+
+
+<script src="js6.js"> </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
