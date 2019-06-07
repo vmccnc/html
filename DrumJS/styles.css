@@ -39,15 +39,24 @@ background-image: url(images/tom3.png);
 }
 
 .j {
-
+background-image: url(images/snare.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .k {
-
+background-image: url(images/crash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .l {
-
+background-image: url(images/kick.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .set {
