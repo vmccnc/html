@@ -1,0 +1,161 @@
+
+
+.header{
+   width: 100%;
+   height: 40px;
+   background: red;
+}
+
+
+.wrapper{
+   /* width: 100%; */
+   min-width:  100vh;
+   background: green; 
+
+}
+.footer{
+   width: 100%;
+   height: 40px;
+   background: yellow; 
+
+   /* position: absolute;
+   bottom: 0;
+   left: 0; */
+   margin-top: -40px;
+}
+ 
+.item{
+   position: relative;
+   width: 200px;
+   height: 200px;
+}
+
+.item img{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.hover{
+   /* display: none; */
+   opacity: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   transition: .3s;
+   background-color: rgba(0,0,0, .5);
+}
+
+.item:hover > .hover{
+   opacity: 1;
+}
+
+.triangle{
+   width: 0;
+   height: 0;
+   border-top: 100px solid red;
+   border-left: 50px solid transparent;
+   border-right :50px solid transparent;
+
+}
+
+
+.triangle2{
+   width: 0;
+   height: 0;
+   border-left: 100px solid red;
+   border-top: 50px solid transparent;
+   border-bottom :50px solid transparent;
+
+}
+
+.rectangle{
+   width: 100px;
+   height: 100px;
+   background: yellow;
+   transform: rotate(45deg);
+
+}
+
+.trapetia {
+   height: 0;
+   width: 100px;
+   border-bottom : 100px solid green;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+}
+
+.paralelogram {
+   width: 200px;
+   height: 100px;
+   background: yellow;
+   transform: skew(30deg);
+}
+
+.box{
+   position: relative;
+   width: 200px;
+   padding: 20px;
+   border: 1px solid green;
+   color: #fff;
+   background: blue;
+}
+
+/* .box:after{
+   content: "";
+   display: block;
+   height: 20px;
+   width: 20px;
+   transform: rotate(45deg);
+   position: absolute;
+   left: 40px;
+   bottom: -10px;
+   background-color: blue;
+} */
+
+.box:after{
+   content: "";
+   display: block;
+   height: 0;
+   width: 0;
+    border-top: 20px;
+    border-left: 20px;
+   position: absolute;
+   left: 10px;
+   bottom: -20px;
+   /* background: blue; */
+
+   border-top: 20px solid blue;
+   border-left: 10px solid transparent;
+   border-right :10px solid transparent;
+}
+
+.modal{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,.5);
+   z-index: 5555;
+   display: none;
+}
+
+/* body{
+   overflow: hidden;
+} */
+
+.modal-content{
+   position: absolute;
+   width: 300px;
+   height: 200px;
+   background: #fff;
+   left: 50%;
+   top: 50%;
+   margin-left: -150px;
+   margin-top: -100px;
+   border: 1px solid yellow;
+}
