@@ -6,9 +6,12 @@ for(var i =0; i<document.querySelectorAll('button').length; i++){
    document.querySelectorAll('button')[i].addEventListener('click', function() {
          console.log('Button is clicked ' + this.innerHTML );
  
+     var buttonInnerHTML =  this.innerHTML;
+       
+       buttonAnimation(buttonInnerHTML);
          makesound(this.innerHTML);
        
-//       switch(this.innerHTML){
+//       switch(buttonInnerHTML){
 //           case 'w':
 //               var audio = new Audio('sounds/tom-1.mp3');
 //               audio.play();
@@ -77,6 +80,7 @@ document.addEventListener('keypress', function(event) {
 //        alert('something is presed! ' + event);
         console.log('Event: ' + event.key);
     
+     buttonAnimation(event.key);
     makesound(event.key);
         
     
@@ -121,6 +125,40 @@ function makesound(key){
                break;
           }
 }
+
+
+
+
+function buttonAnimation(currentKey){
+  var activeButton =  document.querySelector('.' +  currentKey);
+   
+    activeButton.classList.add('pressed');
+    activeButton.classList.add('red');
+    
+    setTimeout(function(){ 
+        activeButton.classList.remove('pressed'); 
+    }, 100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function add(a, b){
