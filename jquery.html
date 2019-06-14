@@ -18,12 +18,17 @@
  
     <h1>Hello!</h1>
     <h2>Hello!</h2>
+    <button class="show5" > Show5 h3</button> 
+    <button class="show4" > Show4 h3</button> 
+      <button class="show3" > Show h3</button> <h3 class="show31">Hello! dis</h3>   
+        <br/>
     <button> Click me</button>
     <button> Click me</button>
     <button> Click me</button>
     <button> Click me</button>
     <button> Click me</button>
-    <button> Click me</button>
+    
+  
       <br/>
    <img src="resources/img/diplomaNadia/mobileWithNadia.png" />
       
@@ -66,6 +71,30 @@ $('button').text('Buy!!');  // change all button<br/>
       $('input').keypress(function(){  <br/>
     console.log(event.key);  <br/>
 });  <br/>
+      
+  <br/>    
+$('h2').on('mouseover', function(){ <br/>
+    $('h2').css('color', 'yellow'); <br/>
+}); <br/>      
+ <br/>      
+$('h1').before('<button>New Button</button>'); (insert button before h1) <br/>      
+$('h1').after('<button>New Button</button>'); (insert button after h1) <br/>      
+$('h1').prepend('<button>New Button</button>'); (insert button after h1) <br/>      
+$('h1').append("<button>New Button</button>"); (insert button after h1) <br/>      
+ <br/>      
+ $('button').remove();<br/>      
+ <br/>      
+ $('.show3').on('click', function(){ <br/>
+    $('h3').fadeToggle(); <br/>
+});<br/>      
+ <br/>      
+$('.show3').on('click', function(){ <br/> 
+    $('h3').slideToggle(); <br/> 
+}); <br/>      
+      
+      
+      
+   <button class="new_react"> Click me</button>    
       
       
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>      

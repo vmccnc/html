@@ -23,3 +23,8 @@ h1.{
 img{
     width: 50px;
 }
+
+.show3,
+.show31{
+    display: inline-block;
+}

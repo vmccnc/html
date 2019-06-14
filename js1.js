@@ -49,9 +49,9 @@
 
 //---- lesson 119 random -----
 
-while(true){
-    alert(Math.random())
-}
+//while(true){
+//    alert(Math.random())
+//}
 
 //var n= Math.random();
 

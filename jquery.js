@@ -30,3 +30,83 @@ $('input').keypress(function(){
 $(document).keypress(function(){
     $('h1').text(event.key);
 });
+
+$('h2').on('mouseover', function(){
+    $('h2').css('color', 'yellow');
+});
+
+//$('h2').on('click', function(){
+//    $('h2').css('color', 'yellow');
+//});
+
+
+//$('h1').before('<button>New Button</button>');
+
+
+//$('button').remove();
+
+$('h3').on('click', function(){
+    $('h3').hide();
+});
+
+
+
+//$('.show3').on('click', function(){
+//    $('h3').toggle();
+//});
+
+
+//$('.show3').on('click', function(){
+//    $('h3').fadeToggle();
+//});
+
+$('.show3').on('click', function(){
+    $('h3').slideToggle();
+});
+
+//$('h3').fadeIn();
+//$('h3').fadeOut();
+//$('h3').slideUp();
+//$('h3').slidedown();
+
+$('.show4').on('click', function(){
+    $('h3').animate({opacity: .5});
+});
+
+
+$('.show5').on('click', function(){
+    $('h3').slideDown().slideUp().animate({opacity: 1});
+});
+
+$('.new_react').on('click', function(){
+    printInConsole('Hello console!');
+    print2('Hello console 2!');
+    
+});
+ 
+
+const printInConsole = (name) =>{
+    console.log(name);
+}
+
+
+function print2(name){
+    console.log(name); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
