@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> My first html</title>
+    <link rel="stylesheet" href="js_sect18_udemy2" >
+</head>
+
+
+<!--<body onload="alert('Hello')">-->
+<body>
+ 
+    
+    <h1>Express</h1>
+    documentation on http://expressjs.com/   (http://expressjs.com/en/starter/installing.html)<br/>
+    <br/>
+    mkdir my-express-server<br/>
+    cd my-express-server<br/>
+    touch server.js<br/>
+    1) npm init<br/>
+    2) npm install express<br/>
+    brackets .   (open project in brackets)<br/>
+    <br/>
+   Add this in server.js: <br/>
+    
+   //jshint esversion:6<br/>
+   const express = require('express');<br/>
+
+const app = express();<br/>
+const port = 3000;<br/>
+
+app.get('/', (req, res) => res.send('Hello World!'));<br/>
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`)) <br/>
+    <br/>
+   node server.js <br/>
+    <br/>
+  Ctcr+C  - Stop server.  <br/>
+    <br/>
+   ---Lesson 200. ---<br/>
+    npm install -g nodemon<br/>
+    <br/>
+    https://nodemon.io/   <br/>
+    npm install -g nodemon    (once installed , always avaluble)<br/>
+    <br/>
+    nodemon server.js -- automaticly restart server if changes is happend!<br/>
+    <br/>
+    res.sendFile(__dirname + '/calculator.html'); <br/>
+    <br/>
+    npm install body-parser  (allow to send information thouth POST request)<br/>
+    Add: app.use(bodyParser.urlencoded({extended: true}));<br/>
+    <br/>
+    <br/>
+    console.log(req.body);<br/>
+     console.log(req.body.a);<br/>
+     console.log(req.body.b);<br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    
+    
+    
+   <script src="resources/js/js_sect18_udemy2.js"></script>   
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
