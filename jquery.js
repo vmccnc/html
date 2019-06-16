@@ -11,10 +11,21 @@ $('img').attr('src');
 //$('img').attr('href', 'resources/img/diplomaNadia/mobileWithNadia1.png');
 //$('a').attr('href', 'http://dmitrypro.beget.tech/homework3.html');
 
-$('h1').click(function(){
-    $('h1').css('color', 'green');
+$('.block2').click(function(){
+    // $('h1').css('color', 'green');
+    $('.block2').css({'background-color':'red', 'heigth':'20px', 'width':'500px'});
 });
-2
+
+
+
+$('h1').click(function(){
+    // $('h1').css('color', 'green');
+    $(this).css('color', 'green');
+    $('.block2').trigger('click');
+});
+
+
+
 $('h2').click(function(){
     $('h2').css('color', 'yellow');
 });
@@ -95,18 +106,44 @@ function print2(name){
 }
 
 
+// $(document).on('click', '#block3', function(){
+//     alert('I found it');
+// });
+
+// $('body').append('<div class="block3" id="block3">BLOCK 3</div>');
+// $('body').prepend('<div class="block3" id="block3">BLOCK 3</div>');
+
+// $('.block').html('<h4>h4444</h4>')
 
 
+// $('.sqr').fadeOut(3000);
+// $('.sqr').fadeIn(3000);
+// $('.sqr').fadeToggle(3000);
+
+// $('.sqr').slideDown(2000);
+// $('.sqr').slideUp(2000);
+// $('.sqr').slideToggle(2000);
+ 
+
+// $('.sqr').animate({
+//        'left': '200px'
+// }, 2000 
+// );
 
 
+// $('body').load('text.txt');
 
 
+// $('img')ajaxSuccess(function(){
+//     $(this).hide();
+// });
 
-
-
-
-
-
-
-
-
+$.ajax({
+url: 'https//vmccnc.com/vmc_json',
+method: 'GET',
+dataType: 'JSON',
+contentType: 'JSON',
+success: function(data){
+    alert(data);
+}
+});

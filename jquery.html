@@ -16,8 +16,23 @@
     
   <body>
  
-    <h1>Hello!</h1>
-    <h2>Hello!</h2>
+<p>https://code.jquery.com/</p>
+
+   <div class="block">
+    <h1>Hello! It is h1</h1>
+  </div>
+
+  <div class="block2">
+    <h1>Block 2</h1>
+  </div>
+
+  <div class="sqr" id="block3">
+     
+  </div>
+
+
+    <p>Переназначение var conflict = jQuery.noConflict(); </p>
+    <h2>Hello! It is h2</h2>
     <button class="show5" > Show5 h3</button> 
     <button class="show4" > Show4 h3</button> 
       <button class="show3" > Show h3</button> <h3 class="show31">Hello! dis</h3>   
@@ -30,16 +45,93 @@
     
   
       <br/>
-   <img src="resources/img/diplomaNadia/mobileWithNadia.png" />
+      clear() - очистить консоль!
+      <br/>
+   <img class="pretty" src="resources/img/diplomaNadia/mobileWithNadia.png" />
       
       <br/>
       <a href="http://dmitrypro.beget.tech/homework2.html">homework2</a>
       <br/>
       <input type="text"/> <br/>
-    
+
+      <br/>
+      $('.block').css('background-color', 'red'); <br/>
+      $('.block').find() <br/>
+      $('.block').prev() <br/>
+      $('.block').next() <br/>
+      $('.block').parent() <br/>
+      $('.block').parents(////)<br/>
+      $('.block').children(////)<br/>
+      $('.block').childrens(////)<br/>
+      $('.block').siblings()<br/>
+      <br/>
+      $('.block').css({'background-color':'red', 'heigth':'20px', 'width':'500px'}); <br/>
+      <br/>
+      $(document).ready(function(){/////}); - выполняется когда DOM дерево загрузится.<br/>
+      <br/>
+      $('.block2').click(function(){<br/>
+        $('.block2').css({'background-color':'red', 'heigth':'20px', 'width':'500px'});<br/>
+    });<br/>
+    <br/>
+
+    $('.block').one('click', function(){ - выполняется только онин раз<br/>
+    $('h2').css('color', 'yellow');<br/>
+});  <br/>
+      <br/>
+ $('.block').html('<h4>h4444</h4>')     <br/>
+ $('.block').wrap('<div class='blockwrap'></div>')      <br/>
+      <br/>
+      <br/>
+      $('.block').unbind('click') ; - удалить обработчик события  <br/>
+      <br/>
+      $('.sqr').fadeOut(3000);<br/>
+     $('.sqr').fadeIn(3000); <br/>
+     $('.sqr').fadeToggle(3000);   <br/>
+      <br/>
+      $('.sqr').show(3000);<br/>
+      $('.sqr').hide(3000);<br/>
+      <br/>
+      $('.sqr').slideDown(2000); <br/>
+      <br/>
+      $('.sqr').animate({
+
+      }); <br/>
+      <br/>
+     <h3>Work with file</h3> <br/>
+      $('body').load('text.txt'); <br/>
+      <br/>
+      $('img')ajaxSend(function(){<br/>
+        $(this).hide();<br/>
+    });<br/>
+      <br/>
+      $('img')ajaxComplete(function(){<br/>
+        $(this).hide();<br/>
+    });  <br/>
+    <br/>
+    $('img')ajaxSuccess(function(){ ////<br/>
+      $('img')ajaxError(function(){ ////<br/>
+      
+        $('img')ajaxStart(function(){ ////<br/>
+          <br/>   
+      <br/>
+      $.ajax({ <br/>
+        url: 'https//vmccnc.com/vmc_json', <br/>
+        method: 'GET', <br/>
+        dataType: 'JSON', <br/>
+        contentType: 'JSON', <br/>
+        success: function(data){ <br/>
+            alert(data); <br/>
+        } <br/>
+        }); <br/>
+      <br/>
+
+
+
+
 $('h1').css('color', 'red'); <br/>
 $('h2').addClass('big-title'); <br/>
 $('h2').addClass('big-title margin50'); <br/>
+$('h2').toggleClass('big-title margin50'); <br/>
 $('h2').hasClass('margin50'); // return true or false <br/>
       $('h2').removeClass('big-title'); <br/>
  
@@ -54,8 +146,10 @@ $('button').text('Buy!!');  // change all button<br/>
  <br/>
      $('img').attr('src');  <br/>
      $('img').attr('src', 'resources/img/diplomaNadia/mobileWithNadia1.png'); <br/>
-     $('img').attr('src', 'resources/img/diplomaNadia/mobileWithNadia.png'); <br/>
+     $('img.pretty').attr('src', 'resources/img/diplomaNadia/mobileWithNadia.png'); <br/>
       
+     $('img.pretty').removeAttr('src', 'resources/img/diplomaNadia/mobileWithNadia.png'); <br/>
+
       $('a').attr('href', 'http://dmitrypro.beget.tech/homework3.html');<br/>
       
       <br/>
@@ -97,7 +191,12 @@ $('.show3').on('click', function(){ <br/>
    <button class="new_react"> Click me</button>    
       
       
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>      
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       -->
+<!-- the same -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 <script src="jquery.js" charset="utf-8"></script>
       
