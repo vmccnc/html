@@ -15,17 +15,17 @@ app.get('/', function (req, res) {
 
 
 app.get('/spindle', function (req, res) {
-request('http://server.vmccnc.com/spindle', function (error, response, body) {
-var tt = JSON.parse(body);
-var totalElements = tt.totalElements;
-res.send('totalElements = ' + totalElements);
-});
+    request('http://server.vmccnc.com/spindle', function (error, response, body) {
+    var tt = JSON.parse(body);
+    var totalElements = tt.totalElements;
+    res.send('totalElements = ' + totalElements);
+    });
 }); 
 
 
 app.get('/bitcoin', function (req, res) {
     console.log('bitcoin GET');
-   res.sendFile(__dirname + '/bitcoin.html');
+    res.sendFile(__dirname + '/bitcoin.html');
 }); 
 
 
@@ -37,10 +37,30 @@ app.post('/bitcoin', function (req, res) {
         
     var crypto = req.body.crypto;
     var fiat = req.body.fiat;
+    var amount = req.body.amount;
         
- 
-//    res.send('ok  =  and ' + fiat);
-    res.send('ok  = ' + crypto + ' and ' + fiat);
+    
+    var options = {
+        url: "https://apiv2.bitcoinaverage.com/convert/global",
+        method: "GET",
+        qs: {
+        from: crypto,
+        to: fiat,
+        amount: amount
+    }
+    }
+    
+ request(options, function(error, response, body){
+    
+    var data = JSON.parse(body);
+    var price = data.price;
+    var currentData = data.time;
+    
+    console.log(price);
+    
+    res.send('price  = ' + price + ' (' + currentData + ')');
+    
+});
  
 }); 
 
@@ -62,6 +82,20 @@ app.post('/bmicalculator', (req, res) => {
      
         }
        );
+
+
+
+
+
+app.get('/app', (req, res) => {
+      res.sendFile(__dirname + '/signup.html');  
+      }
+ );
+
+
+
+
+
 
 
 
