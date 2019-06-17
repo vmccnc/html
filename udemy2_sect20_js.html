@@ -24,7 +24,16 @@ When files package.json and server.js is ready <br/>
 2) npm install request <br/>
 3) npm install body-parser (allow to send information thouth POST request) <br/>
 run: node server.js <br/>
-    
+   <br/>
+   Important:<br/>
+       mailchimp.com<br/>
+    email: 6558822@gmail.com<br/>
+    login: DmityPro<br/>
+    pas: 1234HJK*r<br/>
+https://developer.mailchimp.com/documentation/mailchimp/guides/<br/> 
+   
+    <p>Add to server.js: </p>
+
     <br/>
     <p>Add to server.js: </p>
 //jshint esversion:6<br/>
@@ -32,6 +41,7 @@ const express = require('express');<br/>
 var request = require('request'); <br/>
 const bodyParser = require('body-parser'); - need for pars informaton from  body<br/>
 const app = express();<br/>
+app.use(express.static("public")); - specify static folder<br/>
 app.use(bodyParser.urlencoded({extended: true}));<br/>
     <br/>
      // ---------- Method 1 -----------//<br/>
