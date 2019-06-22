@@ -1,0 +1,36 @@
+
+body{
+   background-color: antiquewhite;
+}
+
+
+/*
+h1.{
+    border: 1px solid green
+}*/
+
+.sqr{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+
+.big-title{
+    font-size: 5rem;
+    color: yellow;
+    font-family: cursive;
+}
+
+.margin50{
+    margin: 30px;
+}
+/* 
+img{
+    width: 50px;
+} */
+
+.show3,
+.show31{
+    display: inline-block;
+}

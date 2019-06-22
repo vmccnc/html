@@ -1,0 +1,89 @@
+﻿    
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="ajax.css">
+<title> Ajax</title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+
+    
+    
+  <body>
+ 
+    <div class="block">
+
+    </div>
+
+
+<br/>
+    $.ajax({<br/>
+      url:'http://httpbin.org/ip',<br/>
+      method: 'GET',<br/>
+      dataType: 'JSON',<br/>
+      contentType: 'JSON',<br/>
+      success: function(data){<br/>
+          console.log(data);<br/>
+      }<br/>
+      });  <br/>
+      <br/>
+     $.ajax({<br/>
+    url:'http://httpbin.org/post',<br/>
+    method: 'POST',<br/>
+    data: {a:2, b:3},<br/>
+    // contentType: 'JSON',<br/>
+    success: function(data){<br/>
+    console.log(data);<br/>
+    }<br/>
+    }); <br/>
+      <br/>
+      <img src="resources/img/access-control-allow-prigin.JPG"/>
+      <br/>
+      Access-Control-Allow-Origin:  must be true or * <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <var></var>
+      
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       -->
+<!-- the same -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="ajax.js" charset="utf-8"></script>
+      
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
