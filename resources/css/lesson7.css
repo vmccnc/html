@@ -6,7 +6,6 @@ body {
 	box-sizing: border-box; */
 
 	background-image: linear-gradient(to right, red 60%, yellow 90%);
-
 }
 
 
@@ -92,5 +91,8 @@ label[for="switch"]:before{
         transform:translate(0,0);
 	}
 	
+
+
+	/* skew - наклонить  */
 
  
