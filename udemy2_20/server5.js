@@ -6,15 +6,42 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
+app.set('view engine', 'ejs');
 
 //--------------------------------//
 
+
+app.get('/render_ejs', (req, res) => {
+    var today = new Date();
+    var currentDay = today.getDay();
+    var day ="";
+    
+    switch(currentDay){
+           case 0:
+              day = "Sunday";
+              break;
+           
+           case 7:
+              day = "Suturday";
+              break;
+           
+           default:
+              day = "Weekday";
+              break;
+           }
+    
+  res.render('list', {dayOf: day} );
+});
+
+
+
+// 1 - send html file
 app.get('/', function (req, res) {
    res.sendFile(__dirname + '/spindle.html');
 }); 
 
 
-
+// 2
 app.get('/spindle', function (req, res) {
     request('http://server.vmccnc.com/spindle', function (error, response, body) {
     var tt = JSON.parse(body);
@@ -25,7 +52,7 @@ app.get('/spindle', function (req, res) {
 
 
 
-
+// 2
 app.get('/bitcoin', function (req, res) {
     console.log('bitcoin GET');
     res.sendFile(__dirname + '/bitcoin.html');
@@ -67,7 +94,7 @@ app.post('/bitcoin', function (req, res) {
 }); 
 
 
-
+// 4
 app.get('/bmicalculator', (req, res) => {
       res.sendFile(__dirname + '/bmicalculator.html');  
       }
@@ -88,7 +115,7 @@ app.post('/bmicalculator', (req, res) => {
 
 
 
-
+// 5
 app.get('/signup', (req, res) => {
       res.sendFile(__dirname + '/signup.html');  
       }
@@ -107,7 +134,13 @@ app.post('/signup', (req, res) => {
  ) ;
 
 
-
+// 6
+app.get('/lesson229', (req, res) => {
+      res.write("<h1>Hello, how are you?</p>") ;
+      res.write("<h1>Where you from?</p>") ;
+      res.send();
+      }
+);
 
 
 
