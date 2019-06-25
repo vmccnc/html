@@ -9,17 +9,18 @@
  
 <body>
 
-    
-    
+    <div class="box" id="heading">
+        
     <% if (dayOf==="Tursday") {  %>
     
-    <h1 style="color: red"> Today is <span><%= dayAndDataOf %></span>!</h1>
+    <h1 style="color: white"> Today is <span><%= dayAndDataOf %></span>!</h1>
     <% }else{ %>
    <h1 style="color: blue"> Today is <span><%= dayAndDataOf %></span>!</h1>
      <% }  %>
-    
+    </div>
+
  
-    <ul>
+ <div class="box" id="heading"> 
 <!--
         <li>Buy food</li>
         <li>Cook food</li>
@@ -27,19 +28,22 @@
         <li><%= newListItems %></li>
 -->
         
-        <% for(var i = 0; i<newListItems.length; i++){ %>
-                <li><%= newListItems[i] %></li>                              
-          <% } %>
-        
-        
-    </ul>
+   <% for(var i = 0; i<newListItems.length; i++){ %>
+       <div class="item">
+           <input type="checkbox">
+          <p><%= newListItems[i] %></p>   
+       </div>     
+    <% } %>
+
+
     
-    
-    <form class="" action="/render_ejs" method="post">
-        <input type="text" name="newItem"/>
-        <button type="submit" name="buttton1">Create</button>
+    <form class="item" action="/render_ejs" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="buttton1">+</button>
     
     </form>
+     
+ </div>
     
     
 <!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
