@@ -2,16 +2,45 @@
 <html lang="en-us">
 <head>
     <title>  EJS</title>
-    <link rel="stylesheet" href="udemy2_js.css" >
+<!--    <link rel="stylesheet" href="udemy2_js.css" >-->
 </head>
 
 
  
 <body>
 
-    <h1> Today is <span><%= dayOf %></span>!</h1>
     
-  
+    
+    <% if (dayOf==="Tursday") {  %>
+    
+    <h1 style="color: red"> Today is <span><%= dayAndDataOf %></span>!</h1>
+    <% }else{ %>
+   <h1 style="color: blue"> Today is <span><%= dayAndDataOf %></span>!</h1>
+     <% }  %>
+    
+ 
+    <ul>
+<!--
+        <li>Buy food</li>
+        <li>Cook food</li>
+        <li>Eat food</li>
+        <li><%= newListItems %></li>
+-->
+        
+        <% for(var i = 0; i<newListItems.length; i++){ %>
+                <li><%= newListItems[i] %></li>                              
+          <% } %>
+        
+        
+    </ul>
+    
+    
+    <form class="" action="/render_ejs" method="post">
+        <input type="text" name="newItem"/>
+        <button type="submit" name="buttton1">Create</button>
+    
+    </form>
+    
     
 <!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
  </body>

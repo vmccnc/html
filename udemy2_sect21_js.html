@@ -19,7 +19,17 @@
     
       npm install ejs<br/>
     <br/>
-    <br/>
+    Tags
+    <p><% 'Scriptlet' tag, for control-flow, no output</p>
+  <p><%_ ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it</p>
+  <p><%= Outputs the value into the template (HTML escaped)</p>
+  <p><%- Outputs the unescaped value into the template</p>
+  <p><%# Comment tag, no execution, no output</p>
+  <p><%% Outputs a literal '<%'</p>
+  <p>%> Plain ending tag</p>
+  <p>-%> Trim-mode ('newline slurp') tag, trims following newline</p>
+  <p>_%> ‘Whitespace Slurping’ ending tag, removes all whitespace after it</p>
+    
     <br/>
     <br/>
     <br/>

@@ -10,28 +10,71 @@ app.set('view engine', 'ejs');
 
 //--------------------------------//
 
+ let items = ["Buy food", "Cook food", "Eat food"];    
 
 app.get('/render_ejs', (req, res) => {
-    var today = new Date();
-    var currentDay = today.getDay();
-    var day ="";
-    
+    let today = new Date();
+    let currentDay = today.getDay();
+ 
+   
+    let day ="";
     switch(currentDay){
+
+           case 1:
+              day = "Monday";
+              break;           
+           case 2:
+              day = "Tursday";
+              break;           
+           case 3:
+              day = "Wensday";
+              break;           
+           case 4:
+              day = "Thersday";
+              break;           
+           case 5:
+              day = "Suturday";
+              break;
+           case 6:
+              day = "Friday";
+              break;           
+           case 7:
+              day = "Suturday";
+              break;
            case 0:
               day = "Sunday";
               break;
            
-           case 7:
-              day = "Suturday";
-              break;
            
            default:
-              day = "Weekday";
+              day = "Some mistake";
               break;
            }
     
-  res.render('list', {dayOf: day} );
+    let options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+    };
+     let dayAndData =today.toLocaleDateString("en-US", options);
+      
+     res.render('list', {
+                        dayOf: day, 
+                        dayAndDataOf: dayAndData,
+                        newListItems: items
+                     } );
 });
+
+ 
+// post
+    app.post('/render_ejs', (req, res) => {
+   let newItem = req.body.newItem;
+        items.push(newItem);
+     console.log('newItem = ' + newItem);
+//     res.send('<h1>tt = '+newItem+'</h1>');
+ res.redirect("render_ejs");
+     }
+ );
 
 
 
