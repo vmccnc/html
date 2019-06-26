@@ -43,13 +43,13 @@ app.get('/contact', (req, res) => {
      res.render('contact', {contactText: contactContent});
     });
 
-app.get('/compose', (req, res) => {
-     res.render('compose', {contactText: contactContent});
+app.get('/admin', (req, res) => {
+     res.render('admin', {contactText: contactContent});
     });
 
 
 // post
-app.post('/compose', (req, res) => {
+app.post('/admin', (req, res) => {
     console.log(req.body.postTitle);
     console.log(req.body.postBody);
     
@@ -62,7 +62,7 @@ app.post('/compose', (req, res) => {
        posts.push(post);
         console.log("posts.length = " + posts.length);
         console.log("posts = " + posts);
-        res.redirect("compose");
+        res.redirect("admin");
     
      }
  );
