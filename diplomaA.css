@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+}
+
+ 
+
+/* ---------- nav bar --------*/
+
+/*
+.dm_navbar{
+    padding: 0 10%;
+}
+*/
+
+.navbar .navbar-brand {
+    color: #fff;
+/*     padding: 0 10%;*/
+}
+
+
+/* ---------- startsection --------*/
+
+.startsection{
+  padding: 0 10%;
+  background-color: #ffce45;
+  background-image: -webkit-linear-gradient(180deg, #f70135 50%, #ffce45 50%);
+    height: 100vh;
+/*    height: 890px;*/
+}
+
+
+.img_mobile{
+/*    height: 80%;*/
+    height: 60%;
+    text-align: center;
+}
+
+.text{
+    display: inline-block;
+    text-align: center;
+}
+
+ 
+/* ---------- keyfeatures --------*/
+
+.line hr{
+    background-color: #babdc1;
+    
+}
+
+.line{
+    width: 60px;
+    margin-bottom: -8px;
+}
+
+.line,
+.h4green {
+    display: inline-block;
+  
+}
+
+ 
+
+.keyfeatures{
+    padding: 5% 10%;
+/*    background-color: #31d4e7;*/
+    
+}
+
+
+.tt{
+    height: 30%;
+/*    margin: auto;*/
+}
+
+.tt10{
+      height: 10%; 
+}
+
+.mobileWithNadia{
+    width: 100%;
+    display: inline-block;
+    }
+
+.dm_colmidle{
+    text-align: center;
+/*    vertical-align: middle; */
+}
+
+ 
+/* ---------- whatchvideo --------*/
+    
+    
+    
+.whatchvideo{
+    padding: 5% 10%;
+    background-color: #31d4e7;
+}
+
+
+.video1{
+}
+
+.video1 h4{
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 22px;
+}
+.video1 p{
+/*    text-transform: uppercase;*/
+    color: #fff;
+}
+
+.video2{
+   text-align: center;
+/*   border: 1px solid yellow; */
+}
+
+.circle{
+    
+    height: 60px;
+    width: 60px;
+/*    border: 1px solid red;*/
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: #0098cd;
+    padding-top: 13px;
+  
+}
+
+.circle:hover{
+    background-color: #222222;  
+}
+
+.fab{
+/*    margin-right: 30px;*/
+    color: #fff;
+}
+
+
+iframe{
+    width: 480px;
+    height: 270px;
+}
+
+
+
+/*----  ourteam  -----*/
+    
+.ourteam {
+     padding: 5% 10% 0;
+    text-align: center;
+}
+
+/*
+.ourteam h4{  
+    color: #0eb493;
+    text-transform: uppercase;
+}
+*/
+
+.ourteam p{  
+    padding: 0 13% 10%;
+}
+
+
+/*
+img{
+    width: 100%;
+}
+*/
+
+
+/*
+.card-deck .card{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+*/
+
+
+
+/*----------   what our customet say ------------*/
+
+.whatourcustometsay{
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.imgcustomer{
+    height: 80px;
+    width: 80px;
+}
+
+.carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #d4d3d4;
+    color: red;
+}
+
+/*
+.carousel-indicators {
+    background-color: #d4d3d4;
+}
+*/
+
+.carousel-indicators .active{
+    background-color: #1ab798;
+}
+
+
+/*----------   contact us ------------*/
+
+
+
+.contactus{
+    padding: 5% 10%;
+    color: #fff;
+    background-image: url(resources/img/diplomaNadia/background_contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn_submit{
+    background-color: #31d4e7;
+    
+    
+}
+
+.form-group2{
+   text-align: right;
+}
+
+.circlebackground{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+
+    padding-top: 7px;
+    display: inline-block;
+}
+
+
+
+.dm_facebook{
+       background-color: #3b5997; 
+}
+
+.dm_twiter{
+    background-color: #3ec2f3; 
+}
+.dm_google{
+    background-color: #e44c41; 
+}
+
+.ourphone{
+    margin-top: 20px;
+    margin-bottom: 0px;
+} 
+
+.circlebackground:hover{
+    background-color: #222222;
+}
+
+
+/*----  @media  -----*/
+
+@media(max-width: 1024px){
+    
+    iframe{
+        width: 320px;
+        height: 180px;    
+    }
+
+/*
+    .fab{
+        margin-bottom: 30px;
+    }   
+*/
+}
+
+
+@media(max-width: 768px){
+    
+    .startsection{
+ 
+    background-size: cover;
+}
+    
+    .circle{
+      margin-bottom: 40px;
+    }
+    
+    .video1{
+       text-align: center;
+    }
+    
+  .startsection{
+      background-image: 
+    }
+    
+    .tt{
+        text-align: center;
+    }
+    
+    .mobileWithNadia{
+        width: 200px;
+    }
+    
+    .keyfeatures{
+    padding-top: 50px;
+/*    background-color: #31d4e7;*/
+}
+    
+/*
+    .img_mobile{
+       position: static;
+     }
+*/
+    
+}
+
+@media(max-width: 400px){
+    
+    .circle{
+        height: 45px;
+        width: 45px;
+        padding-top: 6px;   
+    }
+    
+    
+      .img_mobile{
+       width: 100%;
+     }
+    
+    
+    iframe{
+        width: 100%;
+    }
+    
+    .line{
+        width: 5px;
+    }
+    
+    .tt10{
+        height: 0;
+    }
+    
+    .contactus{
+        background-size: cover;
+    }
+}
+
+
+
+
+

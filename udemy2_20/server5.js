@@ -10,7 +10,8 @@ app.set('view engine', 'ejs');
 
 //--------------------------------//
 
- let items = ["Buy food", "Cook food", "Eat food"];    
+ let items = ["Buy food", "Cook food", "Eat food"];   
+ let workitems = ["Buy  2", "Cook  2", "Eat  2"];  
 
 app.get('/render_ejs', (req, res) => {
     let today = new Date();
@@ -60,23 +61,50 @@ app.get('/render_ejs', (req, res) => {
       
      res.render('list', {
                         dayOf: day, 
-                        dayAndDataOf: dayAndData,
+//                        listTitle: dayAndData,
+                        listTitle: "Home",
                         newListItems: items
                      } );
-});
+    });
 
  
+
+
 // post
-    app.post('/render_ejs', (req, res) => {
-   let newItem = req.body.newItem;
-        items.push(newItem);
-     console.log('newItem = ' + newItem);
-//     res.send('<h1>tt = '+newItem+'</h1>');
- res.redirect("render_ejs");
+app.post('/render_ejs', (req, res) => {
+    console.log('render_ejs req.body.list = ' + req.body.list);
+    let newItem = req.body.newItem;
+        
+    if(req.body.list === "Home"){
+         items.push(newItem);
+        res.redirect("render_ejs");
+    }else{
+         workitems.push(newItem);
+        res.redirect("render_ejs2");
+    }    
+        
+ 
      }
  );
 
+//-------------------
+app.get('/render_ejs2', (req, res) => {
+    
+         res.render('list', {
+                        dayOf: "Work List", 
+                        listTitle: "Work",
+                        newListItems: workitems
+                     } );
+    });
 
+//---------- Page About ---------
+app.get('/about', (req, res) => {
+    
+         res.render('about');
+    });
+
+ 
+//---------------------
 
 // 1 - send html file
 app.get('/', function (req, res) {

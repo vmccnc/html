@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <title>  EJS</title>
-    <link rel="stylesheet" href="css/styles.css" >
-</head>
-
-
- 
-<body>
+<%- include('header'); -%>
 
     <div class="box" id="heading">
-        
+        <h1 style="color: white"> <%= dayOf %> </h1>
     <% if (dayOf==="Tursday") {  %>
     
-    <h1 style="color: white"> Today is <span><%= dayAndDataOf %></span>!</h1>
+    <h1 style="color: white"> <%= listTitle %> </h1>
     <% }else{ %>
-   <h1 style="color: blue"> Today is <span><%= dayAndDataOf %></span>!</h1>
+   <h1 style="color: blue"> <%= listTitle %> </h1>
      <% }  %>
     </div>
 
@@ -39,15 +30,11 @@
     
     <form class="item" action="/render_ejs" method="post">
         <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-        <button type="submit" name="buttton1">+</button>
+        <button type="submit" name="list" value="<%= listTitle %>">+<%= listTitle %></button>
     
     </form>
      
  </div>
     
-    
-<!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
- </body>
-</html>
 
-
+<%- include('footer'); -%>
