@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> 26 - Mongoose</title>
+    <link rel="stylesheet" href="udemy2_js.css" >
+</head>
+
+
+<!--<body onload="alert('Hello')">-->
+<body>
+
+    <h1>Lesson 26 - Mongoose</h1>
+    
+
+     npm i mongoose - install library<br/>
+ <br/>
+ https://mongoosejs.com/ - documentation<br/>
+ <br/>
+
+ const mongoose = require('mongoose'); <br/>
+mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true}); <br/>
+
+const Cat = mongoose.model('Cat', { name: String }); <br/>
+
+const kitty = new Cat({ name: 'Zildjian' }); <br/>
+kitty.save().then(() => console.log('meow'));<br/>
+     <br/>
+     
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+    
+<!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

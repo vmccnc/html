@@ -3,11 +3,26 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const mongoose = require('mongoose');
+
+
+mongoose.connect('mongodb://localhost:27017/fruitsDB', {useNewUrlParser: true});
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
+
+
+const fruitSchema = new mongoose.Schema({
+    name: String,
+    rating: Number,
+    review: String
+});
+const Fruit = mongoose.model("Fruit", fruitSchema);
+
+    
+
 
 
 const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
@@ -20,6 +35,23 @@ const posts = [];
 //-----------------------------
 
 app.get('/', (req, res) => {
+    
+    
+    Fruit.find(function(err, fruits){
+        if(err){
+            console.log("error = " + fruits);
+        }else{
+//            console.log(fruits)
+//            for(var i = 0; i<fruits.length; i++){
+//                console.log(fruits[i].name);
+//            }
+          fruits.forEach(function(fruit){
+                console.log("Fruit: " + fruit.name);
+          })  
+            
+        }
+    });
+    
      res.render('home', { 
          contentHome: homeStartingContent,
          postsList: posts
@@ -62,6 +94,15 @@ app.post('/admin', (req, res) => {
        posts.push(post);
         console.log("posts.length = " + posts.length);
         console.log("posts = " + posts);
+    
+   const fruit = new Fruit ({
+        name: post.title,
+        rating: 1,
+        review: post.body
+   });
+  
+fruit.save().then(() => console.log('fruit is saved!!'));
+    
         res.redirect("admin");
     
      }
@@ -79,6 +120,10 @@ app.get('/news/:topic', (req, res) => {
          console.log(x + " - true!!")
      } 
  }
+    
+    
+
+    
      console.log( "Finish")
 //   res.redirect(""); 
     

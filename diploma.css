@@ -106,23 +106,60 @@
     padding-right: 50px;
     border-radius: 20px;
     color: #fff;
+       text-transform: uppercase;
 }
+
 
 
 /*----------- Section 3 -----------*/
 
 .section3{
-     height: 550px;
- background-image: url("resources/img/diploma/back3.png");
+/*     height: 550px;*/
+    background-image: url("resources/img/diploma/back3.png");
     background-repeat: no-repeat;
     background-position: right;
+    background-size: contain;
     
     text-align: left;
     padding-top: 40px;
     color: #40514E;
+    padding: 3%  5% 5%; 
+}
 
-padding: 7% 55% 5% 5%;
-   
+.hover{
+   /* display: none; */
+   opacity: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   transition: .3s;
+   background-color: rgba(0,0,0, .5);
+     
+}
+
+.whatwedo_fon{
+    font-size: 60px;
+    margin:0 0 -30px -80px;
+   color:  rgba(0, 0, 0, 0.05);
+   font-weight: 700;
+}
+
+
+.what{
+    font-weight: 700;
+/*    color: red;*/
+}
+
+
+.button_download2{
+    border: 1px solid #33c5f6;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    color: #030303;
+       text-transform: uppercase;
 }
 
 
@@ -139,15 +176,19 @@ padding: 7% 55% 5% 5%;
 
 .green4 {
     /* height: 305px; */
-    padding: 20px 10px;
+    padding: 40px 10px;
     border: 2px solid transparent;
     border-radius: 50px;
+    color: #fff;
 }
 
 .green4:hover {
     border: 2px dashed #fff;
 }
 
+.for_icon{
+    height: 100px;
+}
 
 /*----------- Section 5 -----------*/
 
@@ -223,37 +264,90 @@ text-align: center;
 /*----------- Section 8 -----------*/
 
 .section8{
- height: 480px;
- background-color: gainsboro;
+/* height: 480px;*/
+/* background-color: gainsboro;*/
  
-padding: 160px 5% 80px 5%;
+padding: 10% 5%;
     
 /*font-size: 0.9rem;*/
 text-align: center; 
 color: #fff;
 }
 
+ 
+ 
+.h2, h2{
+    color: #262626;
+}
+
 .carousel-item{
      padding: 3% 20%;
 }
 
+.carousel-control-next-icon{
+    color: red;
+}
 
 
 /*----------- Section 9 -----------*/
 
 .section9{
-     height: 125px;
+/*     height: 125px;*/
  background-color: #212933;
  
-/*
-padding: 160px 5% 80px 5%;
-text-align: center; 
-*/
+padding: 0 5%;
+/*text-align: center; */
     color: #fff;
+}
+
+.forfooter{
+    padding: 2% 0 0 0  ;
+}
+
+.footercenter{
+    text-align: center;
+}
+
+.linkfooter{
+    color: #fff;
+}
+
+.disign{
+    color: #6d7175;
+    font-family: fantasy;
+    font-weight: 800;
 }
 
 
 
+
+@media(max-width: 769px){
+    
+    .section9 {
+      text-align: center;  
+    }
+    
+    .section3{
+/*     height: 550px;*/
+    background-image: url("resources/img/diploma/back32.png");
+    }
+}
+
+
+@media(max-width: 420px){
+    .whatwedo_fon{
+    
+    font-size: 50px;
+    }
+    
+    .section4green {
+         padding: 5% 10% 5% 10%;
+    }
+   
+}
+
+    
+ 
 
 @media(max-width: 600px){
     
