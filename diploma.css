@@ -26,20 +26,7 @@
 /*    width: 80%;*/
 }
 
-@media(max-width: 991px){
-    
-  .start h1{  
-      font-size: 400%;
-    }
-}
 
-@media(max-width: 600px){
-    
-  .start h1{  
-      font-size: 200%;
-    }
-    
-}
 
 
 .navbar{
@@ -109,6 +96,10 @@
        text-transform: uppercase;
 }
 
+   
+    .doyoustart{
+    font-size: 50px;
+}
 
 
 /*----------- Section 3 -----------*/
@@ -321,35 +312,84 @@ padding: 0 5%;
 
 
 
+
+@media(max-width: 991px){
+    
+  .start h1{  
+      font-size: 400%;
+    }
+    
+    .tttt{
+        padding-right: 80px;
+    }  
+    
+}
+
+
+
+@media(max-width: 960px){
+
+    .tttt{
+        padding-right: 130px;
+    }  
+    
+}
+
+
+
+@media(max-width: 880px){
+
+    .tttt{
+        padding-right: 160px;
+    }  
+    
+}
+
+
+@media(max-width: 820px){
+   
+   .section3{
+    background-image: url("resources/img/diploma/back32.png");
+    }
+}
+
+
+
+
+
 @media(max-width: 769px){
     
     .section9 {
       text-align: center;  
     }
     
+/*
     .section3{
-/*     height: 550px;*/
     background-image: url("resources/img/diploma/back32.png");
     }
+*/
+ 
+         .tttt{
+        padding-right: 0;
+    } 
+    
 }
 
 
-@media(max-width: 420px){
-    .whatwedo_fon{
-    
-    font-size: 50px;
-    }
-    
-    .section4green {
-         padding: 5% 10% 5% 10%;
-    }
-   
-}
-
-    
  
 
 @media(max-width: 600px){
+    
+        
+  .start h1{  
+      font-size: 200%;
+    }
+    
+/*
+ .doyoustart{
+    font-size: 40px;
+}
+*/
     
     .section5white{
          height: 80px;
@@ -372,6 +412,36 @@ padding: 0 5%;
     .carousel-item{
      padding: 3% 10%;
 }
+}
+
+
+
+@media(max-width: 520px){
+        
+    .doyoustart{
+    font-size: 30px;
+}
+
+    
+    
+}
+
+
+@media(max-width: 420px){
+    .whatwedo_fon{
+    
+    font-size: 50px;
+    }
+    
+    .section4green {
+         padding: 5% 10% 5% 10%;
+    }
+   
+    .doyoustart{
+    font-size: 30px;
+}
+
+    
 }
 
 
