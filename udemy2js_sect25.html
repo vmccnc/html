@@ -11,25 +11,37 @@
 
     <h1>Lesson 25 - Mongo DB</h1>
     
-    mongo --version <br/> 
-    mongod - start server (one terminal)<br/>
-    mongo - work with mongoDB (second terminal)<br/>
+    mongo --version // to know version of mongo<br/> 
+    mongod // - start server (one terminal)<br/>
+    mongo //- work with mongoDB (second terminal)<br/>
     <br/>
     <br/>
     <br/>asdfasd
     
     
-    show dbs - show all DB<br/>
-    use shopDB - create new database.<br/>
-    db - to show whot db is curentli selected   <br/>
-    db.products.insertOne({_id: 1, name: "Pen", price: 1.20}); - add one object<br/>
-    show collections<br/>
+    show dbs // - show all DB<br/>
+    use shopDB // - create new database.<br/>
+    db // - to show whot db is curentli selected   <br/>
+    db.products.insertOne({_id: 1, name: "Pen", price: 1.20}); // - add one object<br/>
+    show collections // <br/>
     <br/>
-    db.shopDB.find() - find all elements in collection<br/>
+    db.shopDB.find() // - find all elements in collection<br/>
     <br/>
     <br/>
-    use shopDB -- switch to db shopDB<br/>
-    db.dropDatabase()<br/>
+    use shopDB // -- switch to db shopDB<br/>
+    db.dropDatabase() //<br/>
+    <br/>
+     Fruit.updateOne({_id: id}, {name: nameNew}, function(err){});<br/>
+     Fruit.deleteOne({name: nameForDel}, function(err){}); // delete one element<br/>
+    Fruit.deleteMany({name: nameForDel}, function(err){}); //  delete all elements with name "nameForDel" <br/>
+    <br/>
+    mongo "mongodb+srv://cluster0-pwze8.mongodb.net/test" --username user_admin_dm<br/>
+    pas: dm1234<br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     
 <!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
  </body>

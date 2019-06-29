@@ -6,11 +6,12 @@ const ejs = require("ejs");
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost:27017/fruitsDB', {useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost:27017/fruitsDB', {useNewUrlParser: true}); // local
+mongoose.connect('mongodb+srv://user_admin_dm:dm1234@cluster0-pwze8.mongodb.net/fruitsDB', {useNewUrlParser: true});
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+app.use(express.static("public"));  
 app.set('view engine', 'ejs');
 
 
@@ -19,6 +20,7 @@ const fruitSchema = new mongoose.Schema({
     rating: Number,
     review: String
 });
+
 const Fruit = mongoose.model("Fruit", fruitSchema);
 
     
@@ -35,28 +37,31 @@ const posts = [];
 //-----------------------------
 
 app.get('/', (req, res) => {
+    console.log("---------- / ------------");
     
+    var fruitsA;
     
     Fruit.find(function(err, fruits){
         if(err){
             console.log("error = " + fruits);
+ 
         }else{
 //            console.log(fruits)
 //            for(var i = 0; i<fruits.length; i++){
 //                console.log(fruits[i].name);
 //            }
+ 
           fruits.forEach(function(fruit){
-                console.log("Fruit: " + fruit.name);
+             console.log("Fruit: " + fruit.name + ", id "+ fruit._id);  
           })  
             
         }
     });
     
-     res.render('home', { 
-         contentHome: homeStartingContent,
-         postsList: posts
-     });
+//     res.render('home', {contentHome: homeStartingContent, postsList: posts });
+    res.render('home', {contentHome: homeStartingContent, postsList: posts, fruitList: fruitsA });
     });
+
 
 
 app.get('/home', (req, res) => {
@@ -82,8 +87,9 @@ app.get('/admin', (req, res) => {
 
 // post
 app.post('/admin', (req, res) => {
-    console.log(req.body.postTitle);
-    console.log(req.body.postBody);
+    console.log("----------  Admin Post ------------");
+//    console.log(req.body.postTitle);
+//    console.log(req.body.postBody);
     
     const post = {title: req.body.postTitle,
                body: req.body.postBody
@@ -91,7 +97,7 @@ app.post('/admin', (req, res) => {
     
 //    console.log("obj = " + post);
 
-       posts.push(post);
+        posts.push(post);
         console.log("posts.length = " + posts.length);
         console.log("posts = " + posts);
     
@@ -114,24 +120,73 @@ app.get('/news/:topic', (req, res) => {
     
     let x = req.params.topic;
     
- for(var i = 0; i<posts.length; i++){
-     console.log(i + " - " + posts[i].title);
-     if(posts[i].title === x){
-         console.log(x + " - true!!")
-     } 
- }
-    
-    
-
-    
+     for(var i = 0; i<posts.length; i++){
+         console.log(i + " - " + posts[i].title);
+         if(posts[i].title === x){
+             console.log(x + " - true!!")
+         } 
+     }
      console.log( "Finish")
-//   res.redirect(""); 
     
    });
 
 
 
 
+app.get('/update/:id/:name', (req, res) => {
+    
+      console.log("ttttttttt = " );
+      console.log("id = " + req.params.id);
+    
+      let id = req.params.id;
+      let nameNew = req.params.name;
+    
+    Fruit.updateOne({_id: id}, {name: nameNew}, function(err){
+        if(err){
+            console.log(err);
+        }else{
+             console.log("fruit #"+id + "is changed!");
+        }
+    });
+    
+//     for(var i = 0; i<posts.length; i++){
+//         console.log(i + " - " + posts[i].title);
+//         if(posts[i].title === x){
+//             console.log(x + " - true!!")
+//         } 
+//     }
+     console.log( "New is finished!")
+    
+   });
+
+
+app.get('/delete/:name', (req, res) => {
+   const nameForDel = req.params.name;
+    
+   Fruit.deleteOne({name: nameForDel}, function(err){
+      
+   if(err){
+      console.log(err);
+   }else{
+      console.log("fruit is deleted!");
+   }
+     });
+    
+});
+
+app.get('/deleteMany/:name', (req, res) => {
+   const nameForDel = req.params.name;
+    
+   Fruit.deleteMany({name: nameForDel}, function(err){
+      
+   if(err){
+      console.log(err);
+   }else{
+      console.log("fruits is deleted!");
+   }
+     });
+    
+});
 
 
 
