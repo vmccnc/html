@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>  28 - Heroku</title>
+    <link rel="stylesheet" href="udemy2_js.css" >
+</head>
+
+
+<!--<body onload="alert('Hello')">-->
+<body>
+
+    <h1>Lesson 28 - Heroku</h1>
+ 
+    <br/>
+    first of all we need to install heroku from heroku.com<br/>
+https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment <br/>
+    <br/>
+    How to deploy to heroku : <br/>
+   https://devcenter.heroku.com/articles/deploying-nodejs#specify-the-version-of-node <br/>
+    <br/>   
+    heroku login<br/>
+    heroku create // create project<br/>
+    touch Procfile <br/>
+    Add in the file "Procfile": web: node app.js <br/>
+    <br/>
+    4) add in file app.js next: <br/>
+    let port = process.env.PORT;<br/>
+if (port == null || port == "") {<br/>
+  port = 3000;<br/>
+}<br/>
+app.listen(port, function() { <br/>
+  console.log("Server started on port " + port); <br/>
+}); <br/>
+    
+    <br/>
+ Add in packege.json <br/>
+ "engines": {<br/>
+ "node": "10.16.0"<br/>
+ }, <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+ 
+    
+<!--   <script src="resources/js/js_sect11_udemy2.js"></script>   -->
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

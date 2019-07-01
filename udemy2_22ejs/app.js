@@ -44,22 +44,18 @@ app.get('/', (req, res) => {
     Fruit.find(function(err, fruits){
         if(err){
             console.log("error = " + fruits);
- 
         }else{
-//            console.log(fruits)
-//            for(var i = 0; i<fruits.length; i++){
-//                console.log(fruits[i].name);
-//            }
- 
-          fruits.forEach(function(fruit){
-             console.log("Fruit: " + fruit.name + ", id "+ fruit._id);  
-          })  
+            fruits.forEach(function(fruit){
+            console.log("Fruit: " + fruit.name + ", id "+ fruit._id); 
+       })  
             
+    res.render('home', {contentHome: homeStartingContent, postsList: posts, fruitList: fruits });    
+//       fruits.forEach(function(fruit){
+//       console.log("Fruit: " + fruit.name + ", id "+ fruit._id); 
+//          })        
         }
     });
-    
-//     res.render('home', {contentHome: homeStartingContent, postsList: posts });
-    res.render('home', {contentHome: homeStartingContent, postsList: posts, fruitList: fruitsA });
+ 
     });
 
 
@@ -83,6 +79,8 @@ app.get('/contact', (req, res) => {
 app.get('/admin', (req, res) => {
      res.render('admin', {contactText: contactContent});
     });
+
+
 
 
 // post
@@ -170,9 +168,11 @@ app.get('/delete/:name', (req, res) => {
    }else{
       console.log("fruit is deleted!");
    }
+       
+         res.redirect("/");
      });
-    
 });
+
 
 app.get('/deleteMany/:name', (req, res) => {
    const nameForDel = req.params.name;
@@ -189,7 +189,12 @@ app.get('/deleteMany/:name', (req, res) => {
 });
 
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+port = 5000;
+}
+//app.listen(port);
 
-app.listen(4000, function() {
-  console.log("Server started on port 4000");
+app.listen(port, function() {
+  console.log("Server started on port " + port);
 });

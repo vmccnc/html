@@ -9,6 +9,7 @@
  
 
 
+<!--
  <% for(var i = 0; i<postsList.length; i++){ %>
        <div class="item">
           <h1><%= postsList[i].title %></h1>   
@@ -16,8 +17,17 @@
         <% console.log(postsList[i].title) %>   
        </div>     
     <% } %>
+-->
 
  
+
+ <% for(var i = 0; i<fruitList.length; i++){ %>
+       <div class="item">
+          <h1><%= fruitList[i].name %></h1>   
+          <p><%= fruitList[i].review %></p> 
+        <% console.log(fruitList[i].name) %>   
+       </div>     
+    <% } %>
 
  
 
