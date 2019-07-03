@@ -44,10 +44,18 @@
     padding-left: 1.5rem
 }
 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff; 
+}
+.navbar-light .navbar-nav .nav-link:active {
+    color: yellow; 
+}
+.navbar-light .navbar-nav .nav-link:visited {
+    color: #fff; 
+}
+
 .nav-item a{
-    
     border-bottom: 2px solid transparent;
-   
 }
 
 .nav-item a:hover{
@@ -58,6 +66,12 @@
  
 
 .navbar-light .navbar-brand{
+    color: #fff; 
+}
+.navbar-light .navbar-brand:hover{
+    color: #fff; 
+}
+.navbar-light .navbar-brand:visited{
     color: #fff; 
 }
 /*
@@ -96,7 +110,9 @@
        text-transform: uppercase;
 }
 
-   
+.dm10{
+    margin-right: 10px;
+}   
     .doyoustart{
     font-size: 50px;
 }
@@ -256,7 +272,7 @@ text-align: center;
 
 .section8{
 /* height: 480px;*/
-/* background-color: gainsboro;*/
+ background-color: gainsboro;
  
 padding: 10% 5%;
     
