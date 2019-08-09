@@ -30,18 +30,33 @@ body{
 .homework-left {
     width: 50%;
     border: 1px dashed green;
-     background-color: aliceblue;
-   border-style: dotted;
+    background-color: aliceblue;
+    border-style: dotted;
     border-width: 5px;
     padding: 0 10px 0;
 }
 
-
 .homework-right {
     width: 50%;
     border: 1px dashed green;
-     float: right;
-   
+    float: right;
+}
+
+.homework2{
+/*   text-align: center;*/
+   border: 1px dashed red;
+   width: 90%;
+}
+.homework-left2 {
+    width: 50%;
+    border: 1px dashed green;
+    background-color: aliceblue;
+}
+
+.homework-right2 {
+    width: 50%;
+    border: 1px dashed green;
+    float: right;
 }
 
 .text{
